@@ -5,19 +5,20 @@ public class Item : MonoBehaviour
 {
 	public enum eItemTag : int
 	{
-		HEALING = 0x00000001 << 0,
-		FOOD = 0x00000001 << 1,
-		WEAPON = 0x00000001 << 2,
-		SEED = 0x00000001 << 3,
-		LIQUID = 0x00000001 << 4,
-		VALUABLE = 0x00000001 << 5,
-		CURRENCY = 0x00000001 << 6,
-		MASK = 0x00000001 << 7,
-		ARTEFACT = 0x00000001 << 8,
+		HEALING = 	0x00000001 << 0,
+		FOOD = 		0x00000001 << 1,
+		WEAPON = 	0x00000001 << 2,
+		SEED = 		0x00000001 << 3,
+		LIQUID = 	0x00000001 << 4,
+		VALUABLE = 	0x00000001 << 5,
+		CURRENCY = 	0x00000001 << 6,
+		MASK = 		0x00000001 << 7,
+		ARTEFACT = 	0x00000001 << 8,
 		CONTAINER = 0x00000001 << 9,
-		TOOL = 0x00000001 << 10,
-		BRAMBLES = 0x00000001 << 11,
-		PRISONER = 0x00000001 << 12
+		TOOL = 		0x00000001 << 10,
+		BRAMBLES = 	0x00000001 << 11,
+		PRISONER = 	0x00000001 << 12,
+		HAND = 		0x00000001 << 13
 	}
 
 	public eItemTag[] m_tagList;

@@ -6,7 +6,9 @@ public class ScrollingScript : MonoBehaviour {
     [Range(0.0f, 1.0f)]
     public float seuilDeScroll = 0.66f;
 
+    public int Direction { get { return direction; } } 
     private int direction = 0;
+    
     private int screenWidth;
     private GameObject[] players;
     private Vector2 movement = new Vector2(0,0);
@@ -37,6 +39,15 @@ public class ScrollingScript : MonoBehaviour {
                 direction = 1;
             else if (posPlayers == (players.Length * -1))
                 direction = -1;
+            if (direction != 0)
+            {
+                GroundLoopScript groundScript = GameObject.Find("Grounds").GetComponent<GroundLoopScript>();
+                if (groundScript != null)
+                {
+                    groundScript.direction = direction;
+                    groundScript.enabled = true;
+                }
+            }
         }
         else
         {
@@ -80,7 +91,6 @@ public class ScrollingScript : MonoBehaviour {
             {
                 var posCam = camera.WorldToScreenPoint(camera.transform.position);
                 var mv = camera.ScreenToWorldPoint(new Vector3(posCam.x + (direction*distance), 0.0f, 0.0f));
-                Debug.Log(mv);
                 movement = new Vector2(mv.x, 0.0f);
             }
             else
@@ -101,4 +111,5 @@ public class ScrollingScript : MonoBehaviour {
         Gizmos.color = Color.red;
         Gizmos.DrawLine(source, dest);
     }
+
 }

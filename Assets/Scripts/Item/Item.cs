@@ -3,6 +3,9 @@ using System.Collections;
 
 public class Item : MonoBehaviour
 {
+	public Sprite m_pictogram;
+	public Sprite m_sprite;
+
 	public enum eItemTag : int
 	{
 		HEALING = 	0x00000001 << 0,

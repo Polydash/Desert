@@ -31,7 +31,8 @@ public class PlayerControl : MonoBehaviour
 		Vector3 maxPos = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height));
 
 		float topScreen = maxPos.y;
-		maxPos.y *= (GameMgr.s_instance.m_walkableScreenPercentage * 2.0f - 1.0f);
+		maxPos.y *= (GameMgr.s_instance.m_topWalkableScreenPercentage * 2.0f - 1.0f);
+		minPos.y *= (GameMgr.s_instance.m_bottomWalkableScreenPercentage * -2.0f + 1.0f);
 
 		transform.position = new Vector3(Mathf.Clamp(transform.position.x, minPos.x, maxPos.x), 
 		                                 Mathf.Clamp(transform.position.y, minPos.y, maxPos.y),

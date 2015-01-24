@@ -31,12 +31,19 @@ public class HUDControl : MonoBehaviour
 		}
 	}
 
-	private void Update()
+	private void LateUpdate()
 	{
 		Vector3 minPos = Camera.main.ScreenToWorldPoint(new Vector3(0.0f, 0.0f));
 		Vector3 maxPos = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height));
 
 		m_playerHUD[0].hudBackground.position = new Vector3(minPos.x + margin.x, minPos.y - margin.y);
 		m_playerHUD[1].hudBackground.position = new Vector3(maxPos.x - margin.x, minPos.y -	 margin.y);
+
+		for(int i=0; i<m_playerHUD.Length; i++)
+		{
+			for(int j=0; j<m_playerHUD.Length; j++)
+			{
+			}
+		}
 	}
 }

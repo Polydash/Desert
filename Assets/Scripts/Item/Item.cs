@@ -15,7 +15,9 @@ public class Item : MonoBehaviour
 		MASK = 0x00000001 << 7,
 		ARTEFACT = 0x00000001 << 8,
 		CONTAINER = 0x00000001 << 9,
-		TOOL = 0x00000001 << 10
+		TOOL = 0x00000001 << 10,
+		BRAMBLES = 0x00000001 << 11,
+		PRISONER = 0x00000001 << 12
 	}
 
 	public eItemTag[] m_tagList;

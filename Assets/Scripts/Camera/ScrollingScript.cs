@@ -31,7 +31,7 @@ public class ScrollingScript : MonoBehaviour {
                     move = false;
                 }
             }
-            else
+            else if(direction==-1)
             {
                 if (screenPos.x < (1-seuilDeScroll) * screenWidth)
                 {

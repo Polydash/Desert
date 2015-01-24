@@ -5,7 +5,6 @@ public class ScrollingScript : MonoBehaviour {
 
     [Range(0.0f, 1.0f)]
     public float seuilDeScroll = 0.66f;
-
     public int Direction { get { return direction; } } 
     private int direction = 0;
     
@@ -58,7 +57,7 @@ public class ScrollingScript : MonoBehaviour {
                 var screenPos = camera.WorldToScreenPoint(ob.transform.position);
                 if (direction == 1)
                 {
-                    if (screenPos.x < seuilDeScroll * screenWidth)
+                    if (screenPos.x <= seuilDeScroll * screenWidth)
                     {
                         move = false;
                     }
@@ -73,7 +72,7 @@ public class ScrollingScript : MonoBehaviour {
                 }
                 else if (direction == -1)
                 {
-                    if (screenPos.x > (1 - seuilDeScroll) * screenWidth)
+                    if (screenPos.x >= (1 - seuilDeScroll) * screenWidth)
                     {
                         move = false;
                     }
@@ -92,13 +91,22 @@ public class ScrollingScript : MonoBehaviour {
                 var posCam = camera.WorldToScreenPoint(camera.transform.position);
                 var mv = camera.ScreenToWorldPoint(new Vector3(posCam.x + (direction*distance), 0.0f, 0.0f));
                 movement = new Vector2(mv.x, 0.0f);
+                
             }
             else
             {
                 movement = new Vector2(transform.position.x, transform.position.y);
             }
+            float paralaxSpeed = (movement.x - transform.position.x);
+            transform.position = new Vector3(movement.x, transform.position.y, transform.position.z);
+            if (move)
+            {
+                foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Paralax"))
+                {
+                    obj.transform.position = new Vector3(obj.transform.position.x + paralaxSpeed * (obj.transform.position.z / 10), obj.transform.position.y, obj.transform.position.z);
+                }
+            }
         }
-        transform.position = new Vector3(movement.x, transform.position.y, transform.position.z);
     }
 
     private void OnDrawGizmosSelected()
@@ -111,5 +119,4 @@ public class ScrollingScript : MonoBehaviour {
         Gizmos.color = Color.red;
         Gizmos.DrawLine(source, dest);
     }
-
 }

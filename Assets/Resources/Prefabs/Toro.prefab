@@ -99,7 +99,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: .550000012
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -206,6 +206,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b407816edb85af943a5b057b968b7ba4, type: 3}
   - {fileID: 8300000, guid: ab5504f056df65d489b22eed3adf8521, type: 3}
   - {fileID: 8300000, guid: 728f00ebabd1c9c49a9670248cba14c4, type: 3}
+  rangeNextStep: .5
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -4,24 +4,21 @@ using System.Collections;
 public class PlayerSoundScript : MonoBehaviour {
 
     public AudioClip[] stepsSounds;
-    private AudioSource audio;
+    private AudioSource audioPlayer;
 	// Use this for initialization
 	void Start () {
-        audio = GetComponent<AudioSource>();
-        Debug.Log(stepsSounds);
-        Debug.Log(stepsSounds.Length);
-        Debug.Log(stepsSounds[0]);
-        Debug.Log(audio);
+        audioPlayer = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
         if (GetComponentInChildren<Animator>().GetBool("moving"))
         {
-            if (!audio.isPlaying)
+            if (!audioPlayer.isPlaying)
             {
-                audio.clip = stepsSounds[Random.Range(0,stepsSounds.Length)];
-                audio.Play();
+                audioPlayer.clip = stepsSounds[Random.Range(0, stepsSounds.Length)];
+                audioPlayer.pitch = Random.Range(1.0f, 2.0f);
+                audioPlayer.Play();
             }
         }
 	}

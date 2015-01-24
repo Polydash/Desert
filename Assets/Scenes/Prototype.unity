@@ -291,7 +291,7 @@ Transform:
   m_LocalScale: {x: .200000003, y: .200000003, z: 1}
   m_Children: []
   m_Father: {fileID: 1429012973}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!114 &169511196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -355,7 +355,7 @@ Transform:
   m_LocalScale: {x: .400000006, y: .400000006, z: 1}
   m_Children: []
   m_Father: {fileID: 1429012973}
-  m_RootOrder: 0
+  m_RootOrder: 2
 --- !u!114 &201683995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -908,7 +908,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: .550000012
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1410,7 +1410,7 @@ Transform:
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 1429012973}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!212 &1203771447
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1737,9 +1737,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 201683994}
   - {fileID: 1203771446}
   - {fileID: 169511195}
+  - {fileID: 201683994}
   m_Father: {fileID: 0}
   m_RootOrder: 5
 --- !u!114 &1429012974
@@ -1798,6 +1798,10 @@ Prefab:
     - target: {fileID: 400000, guid: 8859626b86371ba49ab0f621c52956ee, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200000, guid: 8859626b86371ba49ab0f621c52956ee, type: 2}
+      propertyPath: m_Volume
+      value: .550000012
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8859626b86371ba49ab0f621c52956ee, type: 2}

@@ -3,18 +3,9 @@ using System.Collections;
 
 public class EventData : MonoBehaviour
 {
-	public enum eButton
-	{
-		A,
-		B,
-		X,
-		Y
-	}
-	
 	[System.Serializable]
 	public struct Choice
 	{
-		public eButton button;
 		public string text;
 		public Item.eItemTag[] m_tagList;
 	}

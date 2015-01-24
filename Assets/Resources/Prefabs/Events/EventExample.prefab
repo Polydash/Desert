@@ -53,19 +53,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_hitbox: {x: 1.5, y: .5}
-  m_choices:
-  - button: 0
-    text: 
-    m_tagList: 
-  - button: 0
-    text: 
-    m_tagList: 
-  - button: 0
-    text: 
-    m_tagList: 
-  - button: 0
-    text: 
-    m_tagList: 
+  m_choices: []
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -10,22 +10,6 @@ public class EventBase : MonoBehaviour
 	{
 		m_players = GameObject.FindGameObjectsWithTag("Player");
 		m_data = GetComponent<EventData>();
-
-		if(m_data.m_choices.Length > 4)
-		{
-			Debug.LogError("Too many choices on event");
-			return;
-		}
-
-		bool[] buttons = {false, false, false, false};
-		for(int i=0; i<m_data.m_choices.Length; i++)
-		{
-			if(buttons[(int) m_data.m_choices[i].button])
-			{
-				Debug.LogError("Two choices are mapped on the same button");
-			}
-			buttons[(int) m_data.m_choices[i].button] = true;
-		}
 	}
 
 	protected void Update()
@@ -45,7 +29,7 @@ public class EventBase : MonoBehaviour
 
 		if(shown)
 		{
-			//TODO(Paul) : Show menu
+			//TODO(Paul) : Highlight options
 			renderer.material.color = Color.red;
 
 			for(int i=0; i<m_players.Length; i++)
@@ -71,7 +55,7 @@ public class EventBase : MonoBehaviour
 		}
 		else
 		{
-			//TODO(Paul) : Hide menu
+			//TODO(Paul) : Disable highlighting
 			renderer.material.color = Color.white;
 		}
 	}

@@ -14,6 +14,7 @@ public class PlayerControl : MonoBehaviour
 	{
 		m_playerID = GameMgr.s_instance.GetNextPlayerID();
 		m_name = "P" + m_playerID.ToString();
+		gameObject.layer = LayerMask.NameToLayer(m_name);
 	}
 
 	private void FixedUpdate()

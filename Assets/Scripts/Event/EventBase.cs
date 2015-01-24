@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EventBase : MonoBehaviour
+public abstract class EventBase : MonoBehaviour
 {
+	private Transform[] m_players;
+
 	public enum eButton
 	{
 		A,
@@ -23,6 +25,8 @@ public class EventBase : MonoBehaviour
 
 	private void Start()
 	{
+		m_players = GameObject.FindGameObjectsWithTag("Player");
+
 		if(m_choices.Length > 4)
 		{
 			Debug.LogError("Too many choices on event");
@@ -42,6 +46,14 @@ public class EventBase : MonoBehaviour
 
 	private void Update()
 	{
-		//Map input
-	} 
+		for(int i=0; i<m_players.Length; i++)
+		{
+
+		}
+	}
+
+	protected override void DoChoiceA(){}
+	protected override void DoChoiceB(){}
+	protected override void DoChoiceX(){}
+	protected override void DoChoiceY(){}
 }

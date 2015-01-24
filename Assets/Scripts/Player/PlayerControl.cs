@@ -15,6 +15,11 @@ public class PlayerControl : MonoBehaviour
 		m_playerID = GameMgr.s_instance.GetNextPlayerID();
 		m_name = "P" + m_playerID.ToString();
 		gameObject.layer = LayerMask.NameToLayer(m_name);
+
+		if(m_name == "P2")
+		{
+			transform.GetChild(0).renderer.material.color = Color.red;
+		}
 	}
 
 	private void FixedUpdate()
@@ -30,10 +35,13 @@ public class PlayerControl : MonoBehaviour
 		Vector3 minPos = Camera.main.ScreenToWorldPoint(new Vector3(0.0f, 0.0f));
 		Vector3 maxPos = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height));
 
-		maxPos.y *= (GameMgr.s_instance.m_walkableScreenPercentage*2.0f - 1.0f);
+		float topScreen = maxPos.y;
+		maxPos.y *= (GameMgr.s_instance.m_walkableScreenPercentage * 2.0f - 1.0f);
 
 		transform.position = new Vector3(Mathf.Clamp(transform.position.x, minPos.x, maxPos.x), 
 		                                 Mathf.Clamp(transform.position.y, minPos.y, maxPos.y),
-		                                 transform.position.z);
+		                                 Mathf.Clamp(transform.position.y, minPos.y, maxPos.y)/topScreen);
+
+		Debug.Log(transform.position.z);
 	}
 }

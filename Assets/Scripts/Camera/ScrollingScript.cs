@@ -20,9 +20,11 @@ public class ScrollingScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         bool move = true;
+        
         foreach (GameObject ob in players)
         {
-            if (ob.transform.position.x < seuilDeScroll * screenWidth)
+            var screenPos = camera.WorldToScreenPoint (ob.transform.position);
+            if (screenPos.x < seuilDeScroll * screenWidth)
             {
                 move = false;
             }

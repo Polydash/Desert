@@ -4,7 +4,7 @@ using System.Collections;
 public abstract class EventBase : MonoBehaviour
 {
 	private GameObject[] m_players;
-	public Rect m_hitbox;
+	public Vector2 m_hitbox;
 
 	public enum eButton
 	{
@@ -35,7 +35,7 @@ public abstract class EventBase : MonoBehaviour
 		}
 
 		bool[] buttons = {false, false, false, false};
-		for(int i=0; i<buttons.Length; i++)
+		for(int i=0; i<m_choices.Length; i++)
 		{
 			if(buttons[(int) m_choices[i].button])
 			{
@@ -53,23 +53,18 @@ public abstract class EventBase : MonoBehaviour
 		{
 			float posX = m_players[i].transform.position.x;
 			float posY = m_players[i].transform.position.y;
-			if(posX > m_hitbox.x - m_hitbox.width/2.0f && posX < m_hitbox.x + m_hitbox.width/2.0f &&
-			   posY > m_hitbox.y - m_hitbox.height/2.0f && posY < m_hitbox.y + m_hitbox.height/2.0f)
+			if(posX > transform.position.x - m_hitbox.x/2.0f && posX < transform.position.x + m_hitbox.x/2.0f &&
+			   posY > transform.position.y - m_hitbox.y/2.0f && posY < transform.position.y + m_hitbox.y/2.0f)
 			{
-				//TODO(Paul) : Show menu
-				renderer.material.color = Color.red;
 				shown = true;
-			}
-			else
-			{
-				//TODO(Paul) : Hide menu
-				renderer.material.color = Color.white;
-				shown = false;
 			}
 		}
 
 		if(shown)
 		{
+			//TODO(Paul) : Show menu
+			renderer.material.color = Color.red;
+
 			for(int i=0; i<m_players.Length; i++)
 			{
 				string playerName = "P" + (i+1).ToString() + " ";
@@ -90,6 +85,11 @@ public abstract class EventBase : MonoBehaviour
 					DoChoiceY(m_players[i]);
 				}
 			}
+		}
+		else
+		{
+			//TODO(Paul) : Hide menu
+			renderer.material.color = Color.white;
 		}
 	}
 

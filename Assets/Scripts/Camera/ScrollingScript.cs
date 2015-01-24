@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ScrollingScript : MonoBehaviour {
 
-    public int direction = 1;
+    public int direction = 0;
     public float seuilDeScroll = 0.66f;
     public Vector2 scrollSpeed = new Vector2(1,0);
 
@@ -19,33 +19,55 @@ public class ScrollingScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        bool move = true;
-        
-        foreach (GameObject ob in players)
+        if (direction == 0)
         {
-            var screenPos = camera.WorldToScreenPoint (ob.transform.position);
-            if (direction == 1)
+            int posPlayers = 0;
+            foreach (GameObject ob in players)
             {
-                if (screenPos.x < seuilDeScroll * screenWidth)
+                var screenPos = camera.WorldToScreenPoint(ob.transform.position);
+                if (screenPos.x > seuilDeScroll * screenWidth)
                 {
-                    move = false;
+                    posPlayers++;
                 }
-            }
-            else if(direction == -1)
-            {
-                if (screenPos.x > (1-seuilDeScroll) * screenWidth)
+                else if (screenPos.x < (1 - seuilDeScroll) * screenWidth)
                 {
-                    move = false;
-                }
+                    posPlayers--;
+                }   
             }
-        }
-        if (move == true)
-        {
-            movement = new Vector2(direction * scrollSpeed.x, scrollSpeed.y);
+            if (posPlayers == (players.Length))
+                direction = 1;
+            else if (posPlayers == (players.Length * -1))
+                direction = -1;
         }
         else
         {
-            movement = new Vector2(0, 0);
+            bool move = true;
+            foreach (GameObject ob in players)
+            {
+                var screenPos = camera.WorldToScreenPoint(ob.transform.position);
+                if (direction == 1)
+                {
+                    if (screenPos.x < seuilDeScroll * screenWidth)
+                    {
+                        move = false;
+                    }
+                }
+                else if (direction == -1)
+                {
+                    if (screenPos.x > (1 - seuilDeScroll) * screenWidth)
+                    {
+                        move = false;
+                    }
+                }
+            }
+            if (move == true)
+            {
+                movement = new Vector2(direction * scrollSpeed.x, scrollSpeed.y);
+            }
+            else
+            {
+                movement = new Vector2(0, 0);
+            }
         }
 	}
 

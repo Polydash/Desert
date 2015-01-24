@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ItemBase : MonoBehaviour
+public class Item : MonoBehaviour
 {
+	public string m_name;
 	public enum eItemTag : int
 	{
 		WEAPON = 0x00000001 << 0,
@@ -11,7 +12,7 @@ public class ItemBase : MonoBehaviour
 	}
 
 	public eItemTag[] m_tagList;
-	protected int m_tag; 
+	protected int m_tag;
 
 	protected void Start()
 	{
@@ -19,10 +20,5 @@ public class ItemBase : MonoBehaviour
 		{
 			m_tag = m_tag | (int) m_tagList[i];
 		}
-	}
-
-	public bool IsTagged(eItemTag tag)
-	{
-		return ((m_tag & (int) tag) > 0);
 	}
 }

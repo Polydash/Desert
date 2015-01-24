@@ -89,9 +89,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0eb0fa18c9055584d80fcb57f4975d93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: 1
+  direction: 0
   seuilDeScroll: .660000026
-  scrollSpeed: {x: 1, y: 0}
+  scrollSpeed: {x: .00999999978, y: 0}
 --- !u!124 &12400000
 Behaviour:
   m_ObjectHideFlags: 1

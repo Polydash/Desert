@@ -11,16 +11,18 @@ public class PlayerSoundScript : MonoBehaviour {
     private bool wasMoving;
     private AudioSource[] audioPlayers;
     private float nextStep;
+    private Animator playerAnimator;
 	// Use this for initialization
 	void Start () {
         audioPlayers = GetComponents<AudioSource>();
         nextStep = 0;
         wasMoving = false;
+        playerAnimator = GetComponentInChildren<Animator>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if (GetComponentInChildren<Animator>().GetBool("moving"))
+        if (playerAnimator.GetBool("moving"))
         {
             if(!wasMoving)
             {
@@ -45,7 +47,6 @@ public class PlayerSoundScript : MonoBehaviour {
         {
             if (wasMoving)
             {
-                
                 audioPlayers[0].Stop();
                 audioPlayers[1].clip = outSounds[Random.Range(0, outSounds.Length)];
                 audioPlayers[1].pitch = Random.Range(1.0f, 2.0f);

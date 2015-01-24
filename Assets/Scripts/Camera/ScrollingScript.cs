@@ -24,9 +24,19 @@ public class ScrollingScript : MonoBehaviour {
         foreach (GameObject ob in players)
         {
             var screenPos = camera.WorldToScreenPoint (ob.transform.position);
-            if (screenPos.x < seuilDeScroll * screenWidth)
+            if (direction == 1)
             {
-                move = false;
+                if (screenPos.x < seuilDeScroll * screenWidth)
+                {
+                    move = false;
+                }
+            }
+            else
+            {
+                if (screenPos.x < (1-seuilDeScroll) * screenWidth)
+                {
+                    move = false;
+                }
             }
         }
         if (move == true)

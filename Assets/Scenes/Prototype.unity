@@ -690,8 +690,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97556b6d4b28af74db96b64dbec07d10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_speedX: 100
-  m_speedY: 100
+  m_speedX: 80
+  m_speedY: 60
 --- !u!61 &537986287
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1159,8 +1159,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97556b6d4b28af74db96b64dbec07d10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_speedX: 100
-  m_speedY: 100
+  m_speedX: 80
+  m_speedY: 60
 --- !u!4 &1245001130
 Transform:
   m_ObjectHideFlags: 0

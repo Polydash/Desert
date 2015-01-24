@@ -41,7 +41,7 @@ public class ScrollingScript : MonoBehaviour {
         else
         {
             bool move = true;
-            float distance = 0;
+            float distance = float.MaxValue;
             foreach (GameObject ob in players)
             {
                 var screenPos = camera.WorldToScreenPoint(ob.transform.position);
@@ -54,7 +54,7 @@ public class ScrollingScript : MonoBehaviour {
                     else
                     {
                         float newDist =  screenPos.x - (seuilDeScroll * screenWidth);
-                        if (newDist < distance || distance == 0)
+                        if (newDist < distance)
                         {
                             distance = newDist;
                         }
@@ -64,13 +64,12 @@ public class ScrollingScript : MonoBehaviour {
                 {
                     if (screenPos.x > (1 - seuilDeScroll) * screenWidth)
                     {
-
                         move = false;
                     }
                     else
                     {
                         float newDist = ((1-seuilDeScroll) * screenWidth) - screenPos.x ;
-                        if (newDist < distance || distance == 0)
+                        if (newDist < distance)
                         {
                             distance = newDist;
                         }
@@ -79,15 +78,17 @@ public class ScrollingScript : MonoBehaviour {
             }
             if (move == true)
             {
-                movement = new Vector2(direction * distance, 0);
+                var posCam = camera.WorldToScreenPoint(camera.transform.position);
+                var mv = camera.ScreenToWorldPoint(new Vector3(posCam.x + (direction*distance), 0.0f, 0.0f));
+                Debug.Log(mv);
+                movement = new Vector2(mv.x, 0.0f);
             }
             else
             {
-                movement = new Vector2(0, 0);
+                movement = new Vector2(transform.position.x, transform.position.y);
             }
         }
-        Camera.main.transform.Translate(new Vector3(movement.x,movement.y, 0.0f));
-        //transform.position = new Vector3(transform.position.x + movement.x, transform.position.y + movement.y, transform.position.z);
+        transform.position = new Vector3(movement.x, transform.position.y, transform.position.z);
     }
 
     private void OnDrawGizmosSelected()

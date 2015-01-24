@@ -41,7 +41,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_name: Spear
-  m_tagList: 01000000
+  m_tagList: 04000000
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -33,6 +33,5 @@ public class AmbianceSoundScript : MonoBehaviour {
         {
             nextSound -= Time.deltaTime;
         }
-        Debug.Log(nextSound);
 	}
 }

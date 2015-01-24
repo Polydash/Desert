@@ -4,18 +4,29 @@ using System.Collections;
 public class AmbianceSoundScript : MonoBehaviour {
 
     public AudioClip[] ambianceSounds;
-    public float rangeNextSound = 45.0f;
-    private float nextSound;
+    public AudioClip[] animalsSounds;
+
+    public Vector2 rangeNextAniSounds = new Vector2(30.0f, 60.0f);
+    public float rangeNextAmbSound = 45.0f;
+    public float nextAniSounds;
+    private float nextAmbSound;
+
     private AudioSource[] audioPlayers;
     // Use this for initialization
 	void Start () {
         audioPlayers = GetComponents<AudioSource>();
-        nextSound = 0;
+        nextAmbSound = 0;
+        nextAniSounds = 15f;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if (nextSound < 0)
+        AmbianceSoundsUpdate();
+	}
+
+    private void AmbianceSoundsUpdate()
+    {
+        if (nextAmbSound < 0)
         {
             foreach (AudioSource audioPlayer in audioPlayers)
             {
@@ -24,14 +35,37 @@ public class AmbianceSoundScript : MonoBehaviour {
                     audioPlayer.clip = ambianceSounds[Random.Range(0, ambianceSounds.Length)];
                     audioPlayer.pitch = Random.Range(1.0f, 2.0f);
                     audioPlayer.Play();
-                    nextSound = rangeNextSound;
+                    nextAmbSound = rangeNextAmbSound;
                     break;
                 }
             }
         }
         else
         {
-            nextSound -= Time.deltaTime;
+            nextAmbSound -= Time.deltaTime;
         }
-	}
+    }
+
+    private void AnimalsSoundsUpdate()
+    {
+        if (nextAniSounds < 0)
+        {
+            foreach (AudioSource audioPlayer in audioPlayers)
+            {
+                if (!audioPlayer.isPlaying)
+                {
+                    audioPlayer.clip = animalsSounds[Random.Range(0, animalsSounds.Length)];
+                    audioPlayer.pan = Random.Range(-1f, 1f);
+                    audioPlayer.volume = Random.Range(0.5f, 1.0f);
+                    audioPlayer.Play();
+                    nextAniSounds = Random.Range(rangeNextAniSounds.x, rangeNextAniSounds.y);
+                    break;
+                }
+            }
+        }
+        else
+        {
+            nextAniSounds -= Time.deltaTime;
+        }
+    }
 }

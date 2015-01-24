@@ -46,7 +46,6 @@ public class GroundLoopScript : MonoBehaviour {
             {
                 Vector3 firstChildPos = new Vector3(firstChild.position.x + (firstChild.renderer.bounds.size.x / 2), firstChild.position.y, firstChild.position.x);
                 Vector3 firstChildPosPix = Camera.main.WorldToScreenPoint(firstChildPos);
-                Debug.Log(firstChildPosPix);
                 if (firstChildPosPix.x <= 0)
                 {
                     // On récupère le dernier élément de la liste

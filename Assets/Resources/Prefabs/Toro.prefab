@@ -11,8 +11,11 @@ GameObject:
   - 50: {fileID: 5000000}
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
+  - 82: {fileID: 8200000}
+  - 114: {fileID: 11400004}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Toro
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,6 +30,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400002}
   - 212: {fileID: 21200000}
+  - 95: {fileID: 9500002}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -41,7 +45,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .88924104, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -55,7 +59,7 @@ Transform:
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 400000}
   m_RootOrder: 0
@@ -85,6 +89,78 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .319999993, y: .319999993}
   m_Center: {x: 0, y: 0}
+--- !u!82 &8200000
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!95 &9500002
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aeb95b1cf0f7ecd4ba592b70b218b919, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -98,6 +174,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_speedX: 80
   m_speedY: 60
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec3befc6d7410b0448d507cd7e34d4b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seuil: .00999999978
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc4facd33ef400a47859987e8f4e3a2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stepsSounds:
+  - {fileID: 8300000, guid: a4d13cc84de504248aa03144d44fa23a, type: 3}
+  - {fileID: 8300000, guid: c12fdd4e7afd7cb4bbacd3dbc1180773, type: 3}
+  - {fileID: 8300000, guid: dd9e9de4d29009d4daab5e51972903c5, type: 3}
+  - {fileID: 8300000, guid: b5d0850dd90e14349a1746e0886bf31d, type: 3}
+  - {fileID: 8300000, guid: 66d7e094d8235ea4380a6915513aa4d1, type: 3}
+  - {fileID: 8300000, guid: b407816edb85af943a5b057b968b7ba4, type: 3}
+  - {fileID: 8300000, guid: ab5504f056df65d489b22eed3adf8521, type: 3}
+  - {fileID: 8300000, guid: 728f00ebabd1c9c49a9670248cba14c4, type: 3}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

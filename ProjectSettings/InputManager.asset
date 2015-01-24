@@ -5,7 +5,7 @@ InputManager:
   m_ObjectHideFlags: 0
   m_Axes:
   - serializedVersion: 3
-    m_Name: P1 Horizontal
+    m_Name: P2 Horizontal
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: left
@@ -53,7 +53,7 @@ InputManager:
     axis: 0
     joyNum: 2
   - serializedVersion: 3
-    m_Name: P1 Vertical
+    m_Name: P2 Vertical
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: down

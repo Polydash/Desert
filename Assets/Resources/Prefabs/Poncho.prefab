@@ -31,6 +31,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 82: {fileID: 8200000}
   - 114: {fileID: 11400002}
+  - 82: {fileID: 8200002}
   m_Layer: 0
   m_Name: Poncho
   m_TagString: Player
@@ -147,6 +148,64 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!82 &8200002
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!95 &9500000
 Animator:
   serializedVersion: 3
@@ -185,14 +244,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stepsSounds:
-  - {fileID: 8300000, guid: 0a52c4b3ec6b1b047a580b10e2bea2dd, type: 3}
-  - {fileID: 8300000, guid: 8fd10ab435a70594db7d273b3188a3fe, type: 3}
-  - {fileID: 8300000, guid: baf1df79a3630544cbe056545ecff768, type: 3}
-  - {fileID: 8300000, guid: 7a0ea99d0a7a9264cb09afee14bd9aad, type: 3}
-  - {fileID: 8300000, guid: 8cd3970dd7d94444ca7715b93e423430, type: 3}
-  - {fileID: 8300000, guid: 7915387e572494641be9d9e388bd046d, type: 3}
-  - {fileID: 8300000, guid: 4e1295a750288024395816540e1d5eff, type: 3}
-  - {fileID: 8300000, guid: f2a7b647099d16c40b8313990cccee67, type: 3}
+  - {fileID: 8300000, guid: 871dddd6de32cea488c771a8577f2577, type: 3}
+  - {fileID: 8300000, guid: 7dcd1da4aedc3ae4aaa2899bb6616ae1, type: 3}
+  - {fileID: 8300000, guid: 88a95ed9a5a9efb408896ee4bf6ca21b, type: 3}
+  - {fileID: 8300000, guid: e8ef9b06b4ae741438eda1c827d4229a, type: 3}
+  - {fileID: 8300000, guid: a05f2de87ca21b943997e80a026c9fc4, type: 3}
+  - {fileID: 8300000, guid: 93a6b5dcd75c4354ebc97abfd9aeb7e1, type: 3}
+  - {fileID: 8300000, guid: ad4f53816bb33af46a485b137d792bbf, type: 3}
+  - {fileID: 8300000, guid: a56b8c9417b82de4a9be6fad729d8f09, type: 3}
+  inSounds: []
+  outSounds: []
   rangeNextStep: .5
 --- !u!114 &11400004
 MonoBehaviour:

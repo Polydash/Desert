@@ -14,6 +14,7 @@ GameObject:
   - 114: {fileID: 11400002}
   - 82: {fileID: 8200000}
   - 114: {fileID: 11400004}
+  - 82: {fileID: 8200002}
   m_Layer: 0
   m_Name: Toro
   m_TagString: Player
@@ -147,6 +148,64 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!82 &8200002
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!95 &9500002
 Animator:
   serializedVersion: 3
@@ -198,14 +257,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stepsSounds:
-  - {fileID: 8300000, guid: a4d13cc84de504248aa03144d44fa23a, type: 3}
-  - {fileID: 8300000, guid: c12fdd4e7afd7cb4bbacd3dbc1180773, type: 3}
-  - {fileID: 8300000, guid: dd9e9de4d29009d4daab5e51972903c5, type: 3}
-  - {fileID: 8300000, guid: b5d0850dd90e14349a1746e0886bf31d, type: 3}
-  - {fileID: 8300000, guid: 66d7e094d8235ea4380a6915513aa4d1, type: 3}
-  - {fileID: 8300000, guid: b407816edb85af943a5b057b968b7ba4, type: 3}
-  - {fileID: 8300000, guid: ab5504f056df65d489b22eed3adf8521, type: 3}
-  - {fileID: 8300000, guid: 728f00ebabd1c9c49a9670248cba14c4, type: 3}
+  - {fileID: 8300000, guid: a77246b8868285245a5c5fb9ff6dcc50, type: 3}
+  - {fileID: 8300000, guid: 556aff2aacbf4e54bbcd3c4b1e9bf9c1, type: 3}
+  - {fileID: 8300000, guid: 96a253d5f90dd5d4e8737d9e0e51b72a, type: 3}
+  - {fileID: 8300000, guid: a912669e4f81c364e9e2060b28007d62, type: 3}
+  - {fileID: 8300000, guid: 2b314e66fee3b5445b6b79bfed797370, type: 3}
+  - {fileID: 8300000, guid: 43f4973b3d1f98d4dbe4aecb224d4e16, type: 3}
+  - {fileID: 8300000, guid: 22cf3cf209f2f4a48bef13268d1b1f73, type: 3}
+  - {fileID: 8300000, guid: 6f1c36d244498aa4db3c95502598d9e5, type: 3}
+  inSounds: []
+  outSounds: []
   rangeNextStep: .5
 --- !u!212 &21200000
 SpriteRenderer:

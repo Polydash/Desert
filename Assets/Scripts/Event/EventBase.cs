@@ -97,4 +97,19 @@ public abstract class EventBase : MonoBehaviour
 	protected virtual void DoChoiceB(GameObject player){}
 	protected virtual void DoChoiceX(GameObject player){}
 	protected virtual void DoChoiceY(GameObject player){}
+
+	private void OnDrawGizmosSelected()
+	{
+		float minX = transform.position.x - m_hitbox.x/2.0f;
+		float maxX = transform.position.x + m_hitbox.x/2.0f;
+		float minY = transform.position.y - m_hitbox.y/2.0f;
+		float maxY = transform.position.y + m_hitbox.y/2.0f;
+
+		Gizmos.color = Color.red;
+
+		Gizmos.DrawLine(new Vector3(minX, minY), new Vector3(minX, maxY));
+		Gizmos.DrawLine(new Vector3(minX, minY), new Vector3(maxX, minY));
+		Gizmos.DrawLine(new Vector3(maxX, maxY), new Vector3(maxX, minY));
+		Gizmos.DrawLine(new Vector3(maxX, maxY), new Vector3(minX, maxY));
+	}
 }

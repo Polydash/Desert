@@ -73,6 +73,7 @@ public class ScrollingScript : MonoBehaviour {
 
     void LateUpdate()
     {
-        transform.position = new Vector3(transform.position.x + movement.x, transform.position.y + movement.y, transform.position.z);
+        Camera.main.transform.Translate(new Vector3(movement.x,movement.y, 0.0f));
+        //transform.position = new Vector3(transform.position.x + movement.x, transform.position.y + movement.y, transform.position.z);
     }
 }

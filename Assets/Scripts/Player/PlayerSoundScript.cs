@@ -21,5 +21,7 @@ public class PlayerSoundScript : MonoBehaviour {
                 audioPlayer.Play();
             }
         }
+        else if (audioPlayer.isPlaying)
+            audioPlayer.Stop();
 	}
 }

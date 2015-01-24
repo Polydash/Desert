@@ -15,11 +15,6 @@ public class PlayerControl : MonoBehaviour
 		m_playerID = GameMgr.s_instance.GetNextPlayerID();
 		m_name = "P" + m_playerID.ToString();
 		gameObject.layer = LayerMask.NameToLayer(m_name);
-
-		if(m_name == "P2")
-		{
-			transform.GetChild(0).renderer.material.color = Color.red;
-		}
 	}
 
 	private void FixedUpdate()
@@ -41,7 +36,5 @@ public class PlayerControl : MonoBehaviour
 		transform.position = new Vector3(Mathf.Clamp(transform.position.x, minPos.x, maxPos.x), 
 		                                 Mathf.Clamp(transform.position.y, minPos.y, maxPos.y),
 		                                 Mathf.Clamp(transform.position.y, minPos.y, maxPos.y)/topScreen);
-
-		Debug.Log(transform.position.z);
 	}
 }

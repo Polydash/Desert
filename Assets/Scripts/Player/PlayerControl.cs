@@ -3,8 +3,10 @@ using System.Collections;
 
 public class PlayerControl : MonoBehaviour
 {
-	private int m_playerID = 0;
+	public int m_playerID{get; set;}
+
 	private string m_name;
+	private Vector2 m_movement;
 
 	private void Start()
 	{
@@ -14,5 +16,12 @@ public class PlayerControl : MonoBehaviour
 
 	private void Update()
 	{
+		m_movement = new Vector2(Input.GetAxis(m_name + " Horizontal"),
+		                         Input.GetAxis(m_name + " Vertical"));
+	}
+
+	private void FixedUpdate()
+	{
+		rigidbody2D.velocity = m_movement;
 	}
 }

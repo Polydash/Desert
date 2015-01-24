@@ -39,6 +39,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 003bc4c4ec989d542ab6b0900d502604, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_walkableScreenPercentage: .5
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

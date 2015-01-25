@@ -8,10 +8,11 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400000}
-  - 114: {fileID: 11400000}
   - 212: {fileID: 21200000}
+  - 114: {fileID: 11400002}
+  - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: Berry
+  m_Name: FertileGroundEvent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24,8 +25,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 5.72565603, y: -1.37231123, z: 0}
+  m_LocalScale: {x: .800000012, y: .800000012, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -37,11 +38,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 678442973e5c1bb4c93d5bf99968617d, type: 3}
+  m_Script: {fileID: 11500000, guid: b48a93a9316320744bad47f21b180ab8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_pictogram: {fileID: 21300000, guid: d0b85a2b939e1ed419d1eae24afc5595, type: 3}
-  m_tagList: 08000000
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eda78c6667e8e1d419686312e8ea9baa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_hitbox: {x: 2.5, y: 2}
+  m_choices:
+  - text: Planter baies
+    m_tagList: 08000000
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -62,7 +76,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d0b85a2b939e1ed419d1eae24afc5595, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eef57cc431ac0c84dbbf7d6d71cd98b2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

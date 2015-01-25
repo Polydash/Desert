@@ -40,8 +40,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 678442973e5c1bb4c93d5bf99968617d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_pictogram: {fileID: 21300000, guid: e702b5e9037fa7c43b8c94a18e7fc0a9, type: 3}
-  m_sprite: {fileID: 0}
+  m_pictogram: {fileID: 21300000, guid: 838184f8cd64d514dbb3268733c0cd63, type: 3}
   m_tagList: 00080000
 --- !u!212 &21200000
 SpriteRenderer:
@@ -63,7 +62,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e702b5e9037fa7c43b8c94a18e7fc0a9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 838184f8cd64d514dbb3268733c0cd63, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

@@ -13,7 +13,7 @@ public class PlayerAnimScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetButton("P" + playerScript.m_playerID + " A") || Input.GetButton("P" + playerScript.m_playerID + " B"))
+        if (Input.GetButton("P" + playerScript.m_playerID + " A") || Input.GetButton("P" + playerScript.m_playerID + " B") || Input.GetButton("P" + playerScript.m_playerID + " X"))
         {
             GetComponentInChildren<Animator>().SetBool("moving", false);
             GetComponentInChildren<Animator>().SetBool("using", true);

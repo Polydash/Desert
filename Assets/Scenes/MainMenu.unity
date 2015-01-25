@@ -564,12 +564,12 @@ Prefab:
     - target: {fileID: 21200000, guid: e886301099e9209419febb5ce8c7b5e6, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 887c07328748eca42ac2ba7fbf2264e7,
+      objectReference: {fileID: 21300000, guid: 27252efbbe85e2c45be04357189efb1c,
         type: 3}
     - target: {fileID: 11400000, guid: e886301099e9209419febb5ce8c7b5e6, type: 2}
       propertyPath: normalTexture
       value: 
-      objectReference: {fileID: 21300000, guid: 887c07328748eca42ac2ba7fbf2264e7,
+      objectReference: {fileID: 21300000, guid: 27252efbbe85e2c45be04357189efb1c,
         type: 3}
     - target: {fileID: 11400000, guid: e886301099e9209419febb5ce8c7b5e6, type: 2}
       propertyPath: highLightedTexture
@@ -617,7 +617,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c8e57b66dffb3284192aff5c6505d806, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9f4b399ddfc92d4885e52176ecee256, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1876505276
 Transform:
@@ -802,7 +802,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f044fd77211060340b613d9c1ec4c513, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalTexture: {fileID: 21300000, guid: 887c07328748eca42ac2ba7fbf2264e7, type: 3}
+  normalTexture: {fileID: 21300000, guid: 27252efbbe85e2c45be04357189efb1c, type: 3}
   highLightedTexture: {fileID: 21300000, guid: b85eeb8b3a834c64d89e239daf7b0a4e, type: 3}
   Selected: 0
 --- !u!212 &2103481572
@@ -826,5 +826,5 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 887c07328748eca42ac2ba7fbf2264e7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 27252efbbe85e2c45be04357189efb1c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

@@ -8,7 +8,13 @@ public class MenuScript : MonoBehaviour {
     private int selectedButton;
     private int lastDirection;
     private bool isItemSelected;
+    private AudioSource audioPlayer;
+    private AudioClip changeSelection;
+    private AudioClip selection;
 	void Start () {
+        audioPlayer = GetComponent<AudioSource>();
+        changeSelection = Resources.Load<AudioClip>("Sound/Menu/Bouton_A_02");
+        selection = Resources.Load<AudioClip>("Sound/Menu/lol");
         buttons = new List<ButtonScript>(GetComponentsInChildren<ButtonScript>());
         if (buttons.Count > 0)
         {
@@ -36,6 +42,8 @@ public class MenuScript : MonoBehaviour {
                 if (selectedButton == -1)
                     selectedButton = buttons.Count - 1;
                 buttons[selectedButton].Selected = true;
+                audioPlayer.clip = changeSelection;
+                audioPlayer.Play();
                 lastDirection = directionY;
             }
         }

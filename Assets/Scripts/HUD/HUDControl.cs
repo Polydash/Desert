@@ -40,8 +40,8 @@ public class HUDControl : MonoBehaviour
             m_lifeHUD[i] = m_playerHUD[i].hudBackground.GetChild(m_inventories[i].m_itemNum);
 		}
 
-        UpdateLife(0, 2);
         UpdateLife(1, 2);
+        UpdateLife(2, 2);
 	}
 
 	private void LateUpdate()
@@ -74,6 +74,7 @@ public class HUDControl : MonoBehaviour
 
     public void UpdateLife(int playerID, int lifePoints)
     {
+        playerID--;
         if(playerID == 0)
         {
             m_lifeHUD[playerID].GetComponent<SpriteRenderer>().sprite = m_P1State[lifePoints];

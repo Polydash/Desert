@@ -68,6 +68,8 @@ MonoBehaviour:
   m_choices:
   - text: Coupe les ronces et ouvre le chemin
     m_tagList: 00080000
+  - text: Coupe les ronces et se blesse
+    m_tagList: 00200000
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

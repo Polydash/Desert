@@ -62,7 +62,6 @@ public class MenuScript : MonoBehaviour {
     private void ShowCredits()
     {
         GameObject credits = GameObject.Find("Credits");
-        SpriteRenderer credRndr = credits.renderer as SpriteRenderer;
         if (credits.transform.position.z == 12)
         {
             credits.transform.position = new Vector3(credits.transform.position.x, credits.transform.position.y, -1);

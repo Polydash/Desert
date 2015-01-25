@@ -34,7 +34,7 @@ public class CartEvent : EventBase
         renderer.material.color = Color.gray;
 
         Camera.main.GetComponent<ScrollingScript>().CanScroll = true;
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
 
     private void playPickAxeSound()

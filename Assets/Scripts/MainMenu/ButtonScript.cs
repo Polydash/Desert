@@ -6,7 +6,8 @@ public class ButtonScript : MonoBehaviour {
     public Sprite normalTexture;
     public Sprite highLightedTexture;
     public bool Selected = false;
-    public SpriteRenderer spriteRenderer;
+    public MonoBehaviour WhenClicked;
+    private SpriteRenderer spriteRenderer;
 
     private bool wasSelected = false;
 	void Start () {

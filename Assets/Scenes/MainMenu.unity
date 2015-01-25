@@ -132,6 +132,10 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: dae2c6f39506a2c468bbcbb94b6ad6b6,
         type: 3}
+    - target: {fileID: 11400000, guid: e886301099e9209419febb5ce8c7b5e6, type: 2}
+      propertyPath: Selected
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e886301099e9209419febb5ce8c7b5e6, type: 2}
   m_RootGameObject: {fileID: 1268648346}
@@ -197,6 +201,10 @@ Prefab:
         type: 3}
     - target: {fileID: 11400000, guid: e886301099e9209419febb5ce8c7b5e6, type: 2}
       propertyPath: selected
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: e886301099e9209419febb5ce8c7b5e6, type: 2}
+      propertyPath: Selected
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -286,7 +294,7 @@ MonoBehaviour:
   normalTexture: {fileID: 21300000, guid: 887c07328748eca42ac2ba7fbf2264e7, type: 3}
   highLightedTexture: {fileID: 21300000, guid: b85eeb8b3a834c64d89e239daf7b0a4e, type: 3}
   Selected: 0
-  spriteRenderer: {fileID: 0}
+  WhenClicked: {fileID: 0}
 --- !u!212 &1114076656
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -396,7 +404,7 @@ MonoBehaviour:
   normalTexture: {fileID: 21300000, guid: 095508603e81c984aab880db0678c1c2, type: 3}
   highLightedTexture: {fileID: 21300000, guid: dae2c6f39506a2c468bbcbb94b6ad6b6, type: 3}
   Selected: 0
-  spriteRenderer: {fileID: 0}
+  WhenClicked: {fileID: 0}
 --- !u!212 &1268648348
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -463,8 +471,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalTexture: {fileID: 21300000, guid: d4484148be62c8a449d4b63fcbf26f17, type: 3}
   highLightedTexture: {fileID: 21300000, guid: 29a3fc3369405a644a83891a96a807bb, type: 3}
-  Selected: 0
-  spriteRenderer: {fileID: 0}
+  Selected: 1
+  WhenClicked: {fileID: 0}
 --- !u!212 &1286663175
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -9,7 +9,7 @@ public class MenuScript : MonoBehaviour {
     private int lastDirection;
 	void Start () {
         buttons = new List<ButtonScript>(GetComponentsInChildren<ButtonScript>());
-        buttons = buttons.OrderBy(t => t.transform.position.y).ToList(); ;
+        buttons = buttons.OrderBy(t => t.transform.position.y).ToList();
         if (buttons.Count > 0)
         {
             buttons[0].Selected = true;
@@ -36,6 +36,10 @@ public class MenuScript : MonoBehaviour {
                 selectedButton = buttons.Count - 1;
             buttons[selectedButton].Selected = true;
             lastDirection = directionY;
+        }
+        if (Input.GetButtonUp("P1 A"))
+        {
+            
         }
 	}
 }

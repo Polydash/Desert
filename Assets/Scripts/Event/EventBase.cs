@@ -34,10 +34,8 @@ public class EventBase : MonoBehaviour
 
 	protected void Update()
 	{
-		for(int index=0; index<m_players.Length; index++)
+		for(int i=0; i<m_players.Length; i++)
 		{
-            int i = m_players[index].GetComponent<PlayerControl>().m_playerID-1;
-
 			float posX = m_players[i].transform.position.x;
 			float posY = m_players[i].transform.position.y;
 			if(posX > transform.position.x - m_data.m_hitbox.x/2.0f && posX < transform.position.x + m_data.m_hitbox.x/2.0f &&

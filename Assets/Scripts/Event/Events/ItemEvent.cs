@@ -15,10 +15,7 @@ public class ItemEvent : EventBase
         }
         else
         {
-            if(item)
-            {
-                player.GetComponent<PlayerInventory>().SetItem(itemIndex, m_item);
-            }
+            player.GetComponent<PlayerInventory>().SetItem(itemIndex, m_item);
         }
 
         Destroy(gameObject);

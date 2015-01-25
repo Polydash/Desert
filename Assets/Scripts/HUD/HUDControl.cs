@@ -24,9 +24,11 @@ public class HUDControl : MonoBehaviour
 		m_playerHUD = new PlayerHUD[players.Length];
         m_lifeHUD = new Transform[players.Length];
 
-		for(int i=0; i<players.Length; i++)
+		for(int index=0; index<players.Length; index++)
 		{
-			m_inventories[i] = players[i].GetComponent<PlayerInventory>();
+            int i=players[index].GetComponent<PlayerControl>().m_playerID-1;
+
+			m_inventories[i] = players[index].GetComponent<PlayerInventory>();
 			m_playerHUD[i].hudBackground = transform.GetChild(i);
 			m_playerHUD[i].hudPictograms = new Transform[m_inventories[i].m_itemNum];
 			m_playerHUD[i].highlight = new bool[m_inventories[i].m_itemNum];

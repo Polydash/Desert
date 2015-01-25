@@ -11,7 +11,7 @@ public class AutelEvent : EventBase {
         player.GetComponent<PlayerInventory>().ConsumeItem(itemIndex);
 
         GetComponent<Animator>().SetBool("used", true);
-        
+        renderer.material.color = Color.gray;
         this.enabled = false;
     }
 	

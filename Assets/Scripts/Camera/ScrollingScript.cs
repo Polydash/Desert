@@ -7,7 +7,7 @@ public class ScrollingScript : MonoBehaviour {
     public float seuilDeScroll = 0.66f;
     public int Direction { get { return direction; } }
     public bool CanScroll { get; set; } 
-    private int direction = 0;
+    private int direction = 1;
     
     private int screenWidth;
     private GameObject[] players;

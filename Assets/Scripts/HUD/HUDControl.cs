@@ -14,6 +14,8 @@ public class HUDControl : MonoBehaviour
 	public PlayerInventory[] m_inventories;
 	PlayerHUD[] m_playerHUD;
 	public Vector2 margin;
+    public Sprite[] m_P1State;
+    public Sprite[] m_P2State;
 
 	private void Start()
 	{
@@ -35,6 +37,9 @@ public class HUDControl : MonoBehaviour
 			}
             m_lifeHUD[i] = m_playerHUD[i].hudBackground.GetChild(m_inventories[i].m_itemNum);
 		}
+
+        UpdateLife(0, 2);
+        UpdateLife(1, 2);
 	}
 
 	private void LateUpdate()
@@ -65,9 +70,16 @@ public class HUDControl : MonoBehaviour
 		}
 	}
 
-    public void UpdateLife(int lifePoints)
+    public void UpdateLife(int playerID, int lifePoints)
     {
-        //Set life sprite
+        if(playerID == 0)
+        {
+            m_lifeHUD[playerID].GetComponent<SpriteRenderer>().sprite = m_P1State[lifePoints];
+        }
+        else
+        {
+            m_lifeHUD[playerID].GetComponent<SpriteRenderer>().sprite = m_P2State[lifePoints];
+        }
     }
 
     public void Highlight(int player, int item)

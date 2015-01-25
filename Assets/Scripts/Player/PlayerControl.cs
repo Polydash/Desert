@@ -18,7 +18,6 @@ public class PlayerControl : MonoBehaviour
 		gameObject.layer = LayerMask.NameToLayer(m_name);
         m_playerLife = 2;
         m_hud = GameObject.FindGameObjectWithTag("HUD").GetComponent<HUDControl>();
-        m_hud.UpdateLife(m_playerLife);
 	}
 
 	private void FixedUpdate()
@@ -49,11 +48,11 @@ public class PlayerControl : MonoBehaviour
         if(m_playerLife <= 0)
         {
             //Player death
-            m_hud.UpdateLife(0);
+            m_hud.UpdateLife(m_playerID, 0);
         }
         else
         {
-            m_hud.UpdateLife(m_playerLife);
+            m_hud.UpdateLife(m_playerID, m_playerLife);
         }
     }
 
@@ -65,6 +64,6 @@ public class PlayerControl : MonoBehaviour
             m_playerLife = 2;
         }
 
-        m_hud.UpdateLife(m_playerLife);
+        m_hud.UpdateLife(m_playerID, m_playerLife);
     }
 }

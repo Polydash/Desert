@@ -7,9 +7,9 @@ public class MenuScript : MonoBehaviour {
     private List<ButtonScript> buttons;
     private int selectedButton;
     private int lastDirection;
+    private bool isItemSelected;
 	void Start () {
         buttons = new List<ButtonScript>(GetComponentsInChildren<ButtonScript>());
-        buttons = buttons.OrderBy(t => t.transform.position.y).ToList();
         if (buttons.Count > 0)
         {
             buttons[0].Selected = true;
@@ -20,26 +20,60 @@ public class MenuScript : MonoBehaviour {
             buttons[i].Selected = false;
         }
         lastDirection = 0;
-
+        isItemSelected = false;
 	}
 
     // Update is called once per frame
     void Update()
     {
-        int directionY = Mathf.RoundToInt(Input.GetAxis("P1 Vertical"));
-        Debug.Log(directionY);
-        if (directionY != lastDirection)
+        if (!isItemSelected)
         {
-            buttons[selectedButton].Selected = false;
-            selectedButton = (selectedButton + directionY) % (buttons.Count);
-            if (selectedButton == -1)
-                selectedButton = buttons.Count - 1;
-            buttons[selectedButton].Selected = true;
-            lastDirection = directionY;
+            int directionY = - Mathf.RoundToInt(Input.GetAxis("P1 Vertical"));
+            if (directionY != lastDirection)
+            {
+                buttons[selectedButton].Selected = false;
+                selectedButton = (selectedButton + directionY) % (buttons.Count);
+                if (selectedButton == -1)
+                    selectedButton = buttons.Count - 1;
+                buttons[selectedButton].Selected = true;
+                lastDirection = directionY;
+            }
         }
+
         if (Input.GetButtonUp("P1 A"))
         {
-            
+            isItemSelected = true;
+            if (selectedButton == 2)
+            {
+                Application.Quit();
+            }
+            if (selectedButton == 1)
+            {
+                ShowCredits();
+            }
+            if (selectedButton == 0)
+            {
+                Application.LoadLevel("Prototype");
+            }
         }
+        
 	}
+
+    private void ShowCredits()
+    {
+        GameObject credits = GameObject.Find("Credits");
+        SpriteRenderer credRndr = credits.renderer as SpriteRenderer;
+        if (credits.transform.position.z == 12)
+        {
+            credits.transform.position = new Vector3(credits.transform.position.x, credits.transform.position.y, -1);
+        }
+        else 
+        {
+            credits.transform.position = new Vector3(credits.transform.position.x, credits.transform.position.y, 12);
+            isItemSelected = false;
+        }
+        
+
+    }
+
 }

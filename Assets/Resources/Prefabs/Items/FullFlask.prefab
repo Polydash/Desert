@@ -8,10 +8,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400000}
-  - 114: {fileID: 11400000}
   - 212: {fileID: 21200000}
+  - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: Berry
+  m_Name: FullFlask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40,8 +40,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 678442973e5c1bb4c93d5bf99968617d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_pictogram: {fileID: 21300000, guid: d0b85a2b939e1ed419d1eae24afc5595, type: 3}
-  m_tagList: 00000000
+  m_pictogram: {fileID: 21300000, guid: a87ae042928396946b75b44d31d91df8, type: 3}
+  m_tagList: 10000000
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -62,7 +62,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d0b85a2b939e1ed419d1eae24afc5595, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a87ae042928396946b75b44d31d91df8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

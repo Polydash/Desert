@@ -6,8 +6,9 @@ public class DropItemEvent : EventBase {
     public Transform m_item;
     protected override void DoChoice(GameObject player, Item item, int itemIndex, int choice)
     {
+        Debug.Log(m_data.m_choices[choice].text);
         GameObject itemEvent = Resources.Load<GameObject>("Prefabs/Events/ItemEvent");
-        Item it = m_item.GetComponent<Item>(); ; //Resources.Load<Item>("Prefabs/Items/Spear");
+        Item it = m_item.GetComponent<Item>();
         if (!it)
         {
             Debug.LogError("Failed to load items");

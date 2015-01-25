@@ -21,7 +21,11 @@ public class PlayerInventory : MonoBehaviour
 	{
         if(m_items[i])
         {
-            //Spawn item
+            GameObject itemEvent = Resources.Load<GameObject>("Prefabs/Events/ItemEvent");
+            Item droppedItem = m_items[i];
+            GameObject ie = GameObject.Instantiate(itemEvent, new Vector3(transform.position.x - 1.2f, transform.position.y - 0.5f, transform.position.z), new Quaternion()) as GameObject;
+            (ie.renderer as SpriteRenderer).sprite = (droppedItem.renderer as SpriteRenderer).sprite;
+            ie.GetComponent<ItemEvent>().m_item = droppedItem;
         }
 		m_items[i] = it;
 	}

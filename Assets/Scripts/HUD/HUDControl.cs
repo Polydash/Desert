@@ -9,6 +9,7 @@ public class HUDControl : MonoBehaviour
 		public Transform[] hudPictograms;
 	}
 
+    public Transform[] m_lifeHUD;
 	public PlayerInventory[] m_inventories;
 	PlayerHUD[] m_playerHUD;
 	public Vector2 margin;
@@ -18,6 +19,7 @@ public class HUDControl : MonoBehaviour
 		GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
 		m_inventories = new PlayerInventory[players.Length];
 		m_playerHUD = new PlayerHUD[players.Length];
+        m_lifeHUD = new Transform[players.Length];
 
 		for(int i=0; i<players.Length; i++)
 		{
@@ -28,6 +30,7 @@ public class HUDControl : MonoBehaviour
 			{
 				m_playerHUD[i].hudPictograms[j] = m_playerHUD[i].hudBackground.GetChild(j);
 			}
+            m_lifeHUD[i] = m_playerHUD[i].hudBackground.GetChild(m_inventories[i].m_itemNum);
 		}
 	}
 
@@ -58,4 +61,9 @@ public class HUDControl : MonoBehaviour
 			}
 		}
 	}
+
+    public void UpdateLife(int lifePoints)
+    {
+        //Set life sprite
+    }
 }

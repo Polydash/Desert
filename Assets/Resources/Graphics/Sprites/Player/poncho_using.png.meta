@@ -1,6 +1,11 @@
 fileFormatVersion: 2
 guid: def1d492ca3a4b94fa12c633ea57246d
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: poncho_using_0
+    21300002: poncho_using_1
+    21300004: poncho_using_2
+    21300006: poncho_using_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0

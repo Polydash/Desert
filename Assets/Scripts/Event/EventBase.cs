@@ -4,13 +4,21 @@ using System.Collections;
 public class EventBase : MonoBehaviour
 {
 	private GameObject[] m_players;
-	private EventData m_data; 
+    private PlayerInventory[] m_inventories;
+	private EventData m_data;
+    private Item m_handItem;
 
 	protected void Start()
 	{
 		m_players = GameObject.FindGameObjectsWithTag("Player");
 		m_data = GetComponent<EventData>();
-	}
+
+        m_inventories = new PlayerInventory[m_players.Length];
+        for(int i=0; i < m_inventories.Length; i++)
+        {
+            m_inventories[i] = m_players[i].GetComponent<PlayerInventory>();
+        }
+    }
 
 	protected void Update()
 	{
@@ -35,21 +43,29 @@ public class EventBase : MonoBehaviour
 			for(int i=0; i<m_players.Length; i++)
 			{
 				string playerName = "P" + (i+1).ToString() + " ";
-				if(Input.GetButtonDown(playerName + "A"))
+				if(Input.GetButtonDown(playerName + "X"))
 				{
-					DoChoiceA(m_players[i]);
+                    int choice = itemMatching(m_inventories[i].GetItem(0));
+                    if(choice >= 0)
+                    {
+                        DoChoice(m_players[i], m_inventories[i].GetItem(0), choice);
+                    }
+				}
+				else if(Input.GetButtonDown(playerName + "A"))
+                {
+                    int choice = itemMatching(m_inventories[i].GetItem(1));
+                    if(choice >= 0)
+                    {
+                        DoChoice(m_players[i], m_inventories[i].GetItem(1), choice);
+                    }
 				}
 				else if(Input.GetButtonDown(playerName + "B"))
 				{
-					DoChoiceB(m_players[i]);
-				}
-				else if(Input.GetButtonDown(playerName + "X"))
-				{
-					DoChoiceX(m_players[i]);
-				}
-				else if(Input.GetButtonDown(playerName + "Y"))
-				{
-					DoChoiceY(m_players[i]);
+                    int choice = itemMatching(m_inventories[i].GetItem(2));
+                    if(choice >= 0)
+                    {
+                        DoChoice(m_players[i], m_inventories[i].GetItem(2), choice);
+                    }
 				}
 			}
 		}
@@ -60,8 +76,32 @@ public class EventBase : MonoBehaviour
 		}
 	}
 
-	protected virtual void DoChoiceA(GameObject player){}
-	protected virtual void DoChoiceB(GameObject player){}
-	protected virtual void DoChoiceX(GameObject player){}
-	protected virtual void DoChoiceY(GameObject player){}
+    private int itemMatching(Item item)
+    {
+        if(!item)
+        {
+            return -1;
+        }
+
+        for(int i=0; i < m_data.m_choices.Length; i++)
+        {
+            int result = item.GetTag();
+            for(int j=0; j < m_data.m_choices[i].m_tagList.Length; j++)
+            {
+                result = result & ((int) m_data.m_choices[i].m_tagList[j]);
+            }
+
+            if(result > 0)
+            {
+                return i;
+            }
+        }
+
+        return -1;
+    }
+
+    protected virtual void DoChoice(GameObject player, Item item, int choice)
+    {
+         Debug.Log("Event triggered : choice = " + choice.ToString());
+    }
 }

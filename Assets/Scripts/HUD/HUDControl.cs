@@ -23,8 +23,8 @@ public class HUDControl : MonoBehaviour
 		{
 			m_inventories[i] = players[i].GetComponent<PlayerInventory>();
 			m_playerHUD[i].hudBackground = transform.GetChild(i);
-			m_playerHUD[i].hudPictograms = new Transform[players.Length];
-			for(int j=0; j<players.Length; j++)
+			m_playerHUD[i].hudPictograms = new Transform[m_inventories[i].m_itemNum];
+            for(int j=0; j < m_inventories[i].m_itemNum; j++)
 			{
 				m_playerHUD[i].hudPictograms[j] = m_playerHUD[i].hudBackground.GetChild(j);
 			}
@@ -36,18 +36,18 @@ public class HUDControl : MonoBehaviour
 		Vector3 minPos = Camera.main.ScreenToWorldPoint(new Vector3(0.0f, 0.0f));
 		Vector3 maxPos = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height));
 
-		m_playerHUD[0].hudBackground.position = new Vector3(minPos.x + margin.x, minPos.y - margin.y);
-		m_playerHUD[1].hudBackground.position = new Vector3(maxPos.x - margin.x, minPos.y -	 margin.y);
+        m_playerHUD[0].hudBackground.position = new Vector3(minPos.x + margin.x, minPos.y - margin.y);
+        m_playerHUD[1].hudBackground.position = new Vector3(maxPos.x - margin.x, minPos.y - margin.y);
 
 		for(int i=0; i<m_playerHUD.Length; i++)
 		{
-			for(int j=0; j<m_playerHUD.Length; j++)
+			for(int j=0; j<m_inventories[i].m_itemNum; j++)
 			{
 				Item item = m_inventories[i].GetItem(j);
 				SpriteRenderer pictoRenderer = m_playerHUD[i].hudPictograms[j].GetComponent<SpriteRenderer>();
 
 				if(item != null)
-				{ 
+				{
 					pictoRenderer.sprite = item.m_pictogram;
 					pictoRenderer.enabled = true;
 				}

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerInventory : MonoBehaviour
 {
-	public int m_itemNum = 2;
+	public int m_itemNum;
 	private Item[] m_items;
 
 	private void Start()
@@ -13,6 +13,8 @@ public class PlayerInventory : MonoBehaviour
 		{
 			m_items[i] = null;
 		}
+
+        m_items[m_itemNum-1] = Resources.Load<Item>("Prefabs/Items/Hand");
 	}
 
 	public void SetItem(int i, Item it)

@@ -25,13 +25,18 @@ public class Item : MonoBehaviour
 	}
 
 	public eItemTag[] m_tagList;
-	protected int m_tag;
+    private int m_tag;
 
-	protected void Start()
-	{
-		for(int i=0; i<m_tagList.Length; i++)
-		{
-			m_tag = m_tag | (int) m_tagList[i];
-		}
-	}
+    public int GetTag()
+    {
+        if(m_tag == 0 && m_tagList.Length > 0)
+        {
+            for(int i=0; i<m_tagList.Length; i++)
+		    {
+			    m_tag = m_tag | (int) m_tagList[i];
+		    }
+        }
+
+        return m_tag;
+    }
 }

@@ -80,6 +80,7 @@ public class EventBase : MonoBehaviour
 
     private int itemMatching(Item item)
     {
+
         for(int i=0; i < m_data.m_choices.Length; i++)
         {
             if(m_data.m_choices[i].m_tagList.Length == 0 && !item)
@@ -108,6 +109,14 @@ public class EventBase : MonoBehaviour
             }
 
             if(result > 0)
+            {
+                return i;
+            }
+        }
+
+        for(int i=0; i < m_data.m_choices.Length; i++)
+        {
+            if(m_data.m_choices[i].m_tagList.Length == 0)
             {
                 return i;
             }

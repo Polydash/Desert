@@ -45,6 +45,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -74,34 +75,49 @@ MonoBehaviour:
   m_choices:
   - text: Steal the vendor
     m_tagList: 00200000
+    m_description: {fileID: 21300000, guid: f2107fe192d80644f9385b32278efc79, type: 3}
   - text: Buy Item
     m_tagList: 40000000
+    m_description: {fileID: 21300000, guid: 7663d709fe4e88d469fac2012169fe63, type: 3}
   - text: Buy Item
     m_tagList: 20000000
+    m_description: {fileID: 21300000, guid: 120243d6e171e32468b8006c06140452, type: 3}
   - text: Sell Item
     m_tagList: 01000000
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 02000000
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 04000000
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 08000000
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 10000000
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 80000000
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 00010000
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 00020000
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 00040000
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 00080000
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 00400000
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 00800000
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

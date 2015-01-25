@@ -57,6 +57,7 @@ MonoBehaviour:
   - text: "Casse la pierre et lib\xE8re le personnage prisonnier qui offre une gourde
       au joueur "
     m_tagList: 00100000
+    m_description: {fileID: 21300000, guid: 896a22b7a6ce9634c9bf11859ad97db5, type: 3}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

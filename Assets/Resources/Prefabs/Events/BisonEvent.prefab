@@ -45,6 +45,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -73,8 +74,10 @@ MonoBehaviour:
   m_choices:
   - text: Take a horn
     m_tagList: 00200000
+    m_description: {fileID: 21300000, guid: 53eb7e3a0aa24a84da35de3f6b669f27, type: 3}
   - text: Take meat
     m_tagList: 00080000
+    m_description: {fileID: 21300000, guid: fafd380f39a2e8644b8724f13811a91d, type: 3}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

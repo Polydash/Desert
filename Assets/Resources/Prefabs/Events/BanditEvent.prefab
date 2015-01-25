@@ -139,6 +139,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -165,34 +166,49 @@ MonoBehaviour:
   m_choices:
   - text: Give your gold
     m_tagList: 40000000
+    m_description: {fileID: 21300000, guid: 7a5464f59661b0d4fb23978fe5ce47cd, type: 3}
   - text: Attack him
     m_tagList: 00080000
+    m_description: {fileID: 21300000, guid: 653d0fbabb0537a41b744d08ec7cd7a5, type: 3}
   - text: Loose
     m_tagList: 20000000
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 01000000
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 02000000
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 00200000
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 08000000
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 10000000
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 80000000
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 00010000
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 00020000
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 00040000
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 00100000
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 00400000
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 00800000
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

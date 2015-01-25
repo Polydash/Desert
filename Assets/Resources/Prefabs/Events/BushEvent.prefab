@@ -57,6 +57,7 @@ MonoBehaviour:
   m_choices:
   - text: 
     m_tagList: 00200000
+    m_description: {fileID: 21300000, guid: 54ffe7778a9d3b94db44dab877265870, type: 3}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

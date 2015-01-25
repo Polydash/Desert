@@ -181,7 +181,7 @@ MonoBehaviour:
   m_choices:
   - text: Use Artefact
     m_tagList: 00010000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 29cb0f993e961844c899fb72b4dd8fda, type: 3}
 --- !u!95 &49091383
 Animator:
   serializedVersion: 3
@@ -442,7 +442,7 @@ MonoBehaviour:
   - text: "Casse la pierre et lib\xE8re le personnage prisonnier qui offre une gourde
       au joueur "
     m_tagList: 00100000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 896a22b7a6ce9634c9bf11859ad97db5, type: 3}
 --- !u!114 &117450862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -540,49 +540,49 @@ MonoBehaviour:
   m_choices:
   - text: Steal the vendor
     m_tagList: 00200000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: f2107fe192d80644f9385b32278efc79, type: 3}
   - text: Buy Item
     m_tagList: 40000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 7663d709fe4e88d469fac2012169fe63, type: 3}
   - text: Buy Item
     m_tagList: 20000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 120243d6e171e32468b8006c06140452, type: 3}
   - text: Sell Item
     m_tagList: 01000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 02000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 04000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 08000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 10000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 80000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 00010000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 00020000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 00040000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 00080000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 00400000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 00800000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
 --- !u!95 &129062130
 Animator:
   serializedVersion: 3
@@ -712,25 +712,25 @@ MonoBehaviour:
   m_choices:
   - text: Give item
     m_tagList: 40000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 6fd7d0fd30cd1ef4d8648796139ca2c4, type: 3}
   - text: Give item
     m_tagList: 00400000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 6fd7d0fd30cd1ef4d8648796139ca2c4, type: 3}
   - text: Give item
     m_tagList: 00800000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 6fd7d0fd30cd1ef4d8648796139ca2c4, type: 3}
   - text: Give item
     m_tagList: 10000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 6fd7d0fd30cd1ef4d8648796139ca2c4, type: 3}
   - text: Give item
     m_tagList: 08000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 6fd7d0fd30cd1ef4d8648796139ca2c4, type: 3}
   - text: Gain gold
     m_tagList: 00200000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: c09dd184f3b30dd41ae4d1ebcf4321ed, type: 3}
   - text: Gain gold
     m_tagList: 00080000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: c09dd184f3b30dd41ae4d1ebcf4321ed, type: 3}
 --- !u!212 &160388503
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -997,10 +997,10 @@ MonoBehaviour:
   m_choices:
   - text: Use Flask
     m_tagList: 00020000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 8e1eac5802f30574dbf28fb2b9a82ffe, type: 3}
   - text: Drink Water
     m_tagList: 00200000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: cd7e28412610da249810daceee43fbf7, type: 3}
 --- !u!212 &237262032
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1129,10 +1129,10 @@ MonoBehaviour:
   m_choices:
   - text: Take a horn
     m_tagList: 00200000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 53eb7e3a0aa24a84da35de3f6b669f27, type: 3}
   - text: Take meat
     m_tagList: 00080000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: fafd380f39a2e8644b8724f13811a91d, type: 3}
 --- !u!95 &308166761
 Animator:
   serializedVersion: 3
@@ -2006,7 +2006,7 @@ MonoBehaviour:
   m_choices:
   - text: "R\xE9cup\xE8re une pioche et une machette"
     m_tagList: 00200000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: c775dd9e554cf7d48992b88e1d8272e7, type: 3}
 --- !u!114 &482522338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2128,49 +2128,49 @@ MonoBehaviour:
   m_choices:
   - text: Give your gold
     m_tagList: 40000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 7a5464f59661b0d4fb23978fe5ce47cd, type: 3}
   - text: Attack him
     m_tagList: 00080000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 653d0fbabb0537a41b744d08ec7cd7a5, type: 3}
   - text: Loose
     m_tagList: 20000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 01000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 02000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 00200000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 08000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 10000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 80000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 00010000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 00020000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 00040000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 00100000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 00400000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 00800000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
 --- !u!95 &485420992
 Animator:
   serializedVersion: 3
@@ -2666,10 +2666,10 @@ MonoBehaviour:
   m_choices:
   - text: Coupe les ronces et ouvre le chemin
     m_tagList: 00080000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: eb9ee590973098849bbbeba8dd44b288, type: 3}
   - text: Coupe les ronces et se blesse
     m_tagList: 00200000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: ce4e5f4ec35afcb438db5d846e9b840b, type: 3}
 --- !u!114 &559719682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3062,7 +3062,7 @@ MonoBehaviour:
   m_choices:
   - text: 
     m_tagList: 00200000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 54ffe7778a9d3b94db44dab877265870, type: 3}
 --- !u!212 &592438513
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3343,49 +3343,49 @@ MonoBehaviour:
   m_choices:
   - text: Give your gold
     m_tagList: 40000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 7a5464f59661b0d4fb23978fe5ce47cd, type: 3}
   - text: Attack him
     m_tagList: 00080000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 653d0fbabb0537a41b744d08ec7cd7a5, type: 3}
   - text: Loose
     m_tagList: 20000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 01000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 02000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 00200000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 08000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 10000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 80000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 00010000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 00020000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 00040000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 00100000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 00400000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
   - text: Loose
     m_tagList: 00800000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 5d59da2450f457d4abf773f9bfbe1909, type: 3}
 --- !u!95 &718359376
 Animator:
   serializedVersion: 3
@@ -3639,10 +3639,10 @@ MonoBehaviour:
   m_choices:
   - text: Cuire viande
     m_tagList: 00400000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 851afbc50dd7db342864f5d18226eaab, type: 3}
   - text: Gagner PV
     m_tagList: 00200000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 85ead409885685a48b5b8fb76d1d1125, type: 3}
 --- !u!212 &799697638
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3775,7 +3775,7 @@ MonoBehaviour:
   m_choices:
   - text: Rest in peace
     m_tagList: 00200000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 06ea7666dfd81864eb0b8150df6c8fae, type: 3}
 --- !u!212 &810286105
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4243,7 +4243,7 @@ MonoBehaviour:
   m_choices:
   - text: 
     m_tagList: 00200000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 22dfd45b4ddd3594297e690f8678e77d, type: 3}
 --- !u!212 &1040936806
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4419,10 +4419,10 @@ MonoBehaviour:
   m_choices:
   - text: Use Flask
     m_tagList: 00020000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 8e1eac5802f30574dbf28fb2b9a82ffe, type: 3}
   - text: Drink Water
     m_tagList: 00200000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: cd7e28412610da249810daceee43fbf7, type: 3}
 --- !u!212 &1078960557
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4505,7 +4505,7 @@ MonoBehaviour:
   m_choices:
   - text: 
     m_tagList: 00200000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 22dfd45b4ddd3594297e690f8678e77d, type: 3}
 --- !u!212 &1096702302
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4632,10 +4632,10 @@ MonoBehaviour:
   m_choices:
   - text: "Combat \xE0 main nue"
     m_tagList: 00200000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: ce4e5f4ec35afcb438db5d846e9b840b, type: 3}
   - text: Combat
     m_tagList: 00080000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 120d96eea2e37ae4a951137cc43ed0e4, type: 3}
 --- !u!212 &1125854337
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4762,7 +4762,7 @@ MonoBehaviour:
   m_choices:
   - text: 
     m_tagList: 00200000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 54ffe7778a9d3b94db44dab877265870, type: 3}
 --- !u!212 &1157437827
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4844,7 +4844,7 @@ MonoBehaviour:
   m_choices:
   - text: Planter baies
     m_tagList: 08000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: dfe1e2dfce756ce4a8cd1dec8cccaf4d, type: 3}
 --- !u!212 &1162827697
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5029,49 +5029,49 @@ MonoBehaviour:
   m_choices:
   - text: Steal the vendor
     m_tagList: 00200000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: f2107fe192d80644f9385b32278efc79, type: 3}
   - text: Buy Item
     m_tagList: 40000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 7663d709fe4e88d469fac2012169fe63, type: 3}
   - text: Buy Item
     m_tagList: 20000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 120243d6e171e32468b8006c06140452, type: 3}
   - text: Sell Item
     m_tagList: 01000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 02000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 04000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 08000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 10000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 80000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 00010000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 00020000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 00040000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 00080000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 00400000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
   - text: Sell Item
     m_tagList: 00800000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: c8d77f5df06ff5d44b53407b56f78c0d, type: 3}
 --- !u!95 &1178319088
 Animator:
   serializedVersion: 3
@@ -5636,7 +5636,7 @@ MonoBehaviour:
   m_choices:
   - text: 
     m_tagList: 00200000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 22dfd45b4ddd3594297e690f8678e77d, type: 3}
 --- !u!212 &1340067283
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5813,10 +5813,10 @@ MonoBehaviour:
   m_choices:
   - text: Take a horn
     m_tagList: 00200000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 53eb7e3a0aa24a84da35de3f6b669f27, type: 3}
   - text: Take meat
     m_tagList: 00080000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: fafd380f39a2e8644b8724f13811a91d, type: 3}
 --- !u!95 &1348922749
 Animator:
   serializedVersion: 3
@@ -6131,13 +6131,13 @@ MonoBehaviour:
   m_choices:
   - text: Fuite du chien
     m_tagList: 00200000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 0759fa877241bdf4185ad03a9405c70f, type: 3}
   - text: Tuer le chien
     m_tagList: 00080000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 0d10b90f6bd430f439df6954a8bc2cf0, type: 3}
   - text: Donner viande
     m_tagList: 00400000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: a4bd31c8e53d6d2458ce5fcf62c9b699, type: 3}
 --- !u!212 &1422960784
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6473,10 +6473,10 @@ MonoBehaviour:
   m_choices:
   - text: Cuire viande
     m_tagList: 00400000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 851afbc50dd7db342864f5d18226eaab, type: 3}
   - text: Gagner PV
     m_tagList: 00200000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 85ead409885685a48b5b8fb76d1d1125, type: 3}
 --- !u!212 &1504968182
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7115,10 +7115,10 @@ MonoBehaviour:
   m_choices:
   - text: Coupe les ronces et ouvre le chemin
     m_tagList: 00080000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: eb9ee590973098849bbbeba8dd44b288, type: 3}
   - text: Coupe les ronces et se blesse
     m_tagList: 00200000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: ce4e5f4ec35afcb438db5d846e9b840b, type: 3}
 --- !u!212 &2009816376
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7200,10 +7200,10 @@ MonoBehaviour:
   m_choices:
   - text: Gagner viande
     m_tagList: 00080000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: fafd380f39a2e8644b8724f13811a91d, type: 3}
   - text: Fuite du suricate
     m_tagList: 00200000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 0759fa877241bdf4185ad03a9405c70f, type: 3}
 --- !u!212 &2010782775
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7378,7 +7378,7 @@ MonoBehaviour:
   m_choices:
   - text: Use Artefact
     m_tagList: 00010000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 29cb0f993e961844c899fb72b4dd8fda, type: 3}
 --- !u!95 &2075188127
 Animator:
   serializedVersion: 3
@@ -7526,46 +7526,46 @@ MonoBehaviour:
   m_choices:
   - text: Give your meat
     m_tagList: 00800000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: a4bd31c8e53d6d2458ce5fcf62c9b699, type: 3}
   - text: Give your meat
     m_tagList: 00400000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: a4bd31c8e53d6d2458ce5fcf62c9b699, type: 3}
   - text: Win
     m_tagList: 00080000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: 2b78bf00782591141a664b862a37067d, type: 3}
   - text: Loose
     m_tagList: 01000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: ce4e5f4ec35afcb438db5d846e9b840b, type: 3}
   - text: Loose
     m_tagList: 02000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: ce4e5f4ec35afcb438db5d846e9b840b, type: 3}
   - text: Loose
     m_tagList: 00200000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: ce4e5f4ec35afcb438db5d846e9b840b, type: 3}
   - text: Loose
     m_tagList: 08000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: ce4e5f4ec35afcb438db5d846e9b840b, type: 3}
   - text: Loose
     m_tagList: 10000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: ce4e5f4ec35afcb438db5d846e9b840b, type: 3}
   - text: Loose
     m_tagList: 80000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: ce4e5f4ec35afcb438db5d846e9b840b, type: 3}
   - text: Loose
     m_tagList: 00010000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: ce4e5f4ec35afcb438db5d846e9b840b, type: 3}
   - text: Loose
     m_tagList: 00020000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: ce4e5f4ec35afcb438db5d846e9b840b, type: 3}
   - text: Loose
     m_tagList: 00040000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: ce4e5f4ec35afcb438db5d846e9b840b, type: 3}
   - text: Loose
     m_tagList: 00100000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: ce4e5f4ec35afcb438db5d846e9b840b, type: 3}
   - text: Loose
     m_tagList: 02000000
-    m_description: {fileID: 0}
+    m_description: {fileID: 21300000, guid: ce4e5f4ec35afcb438db5d846e9b840b, type: 3}
 --- !u!61 &2105833638
 BoxCollider2D:
   m_ObjectHideFlags: 0

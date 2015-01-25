@@ -45,6 +45,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -71,6 +72,7 @@ MonoBehaviour:
   m_choices:
   - text: Use Artefact
     m_tagList: 00010000
+    m_description: {fileID: 21300000, guid: 29cb0f993e961844c899fb72b4dd8fda, type: 3}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

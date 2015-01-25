@@ -20,6 +20,12 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
+  - m_Name: dead
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 3
     m_Name: Base Layer
@@ -46,6 +52,46 @@ Transition:
   m_Conditions:
   - m_ConditionMode: 1
     m_ConditionEvent: moving
+    m_EventTreshold: 0
+    m_ExitTime: 1
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
+--- !u!1101 &110107700
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110260313}
+  m_DstState: {fileID: 110229437}
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: dead
+    m_EventTreshold: 0
+    m_ExitTime: 1
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
+--- !u!1101 &110111159
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110212958}
+  m_DstState: {fileID: 110229437}
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: dead
     m_EventTreshold: 0
     m_ExitTime: 1
   m_Atomic: 1
@@ -112,6 +158,26 @@ Transition:
   m_Solo: 0
   m_Mute: 0
   m_CanTransitionToSelf: 0
+--- !u!1101 &110179819
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110247123}
+  m_DstState: {fileID: 110229437}
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: dead
+    m_EventTreshold: 0
+    m_ExitTime: 1
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
 --- !u!1102 &110200000
 State:
   m_ObjectHideFlags: 3
@@ -138,7 +204,22 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: 07ee10ecfffd0d14480f9ffcb7db77b0, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: -12, y: 84, z: 0}
+  m_Position: {x: 0, y: 180, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110229437
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: PonchoDeathAnim
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: cba5b61069dbc11459202de6a4d36d5e, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 276, y: 12, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -153,7 +234,7 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: 368b7c4307a6a3043b1886274a32d444, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: 264, y: 132, z: 0}
+  m_Position: {x: 276, y: 156, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -168,7 +249,7 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: 3921ff0b184a7e449b1392c78e7293b3, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: -12, y: 168, z: 0}
+  m_Position: {x: -36, y: 72, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -184,13 +265,13 @@ StateMachine:
   - {fileID: 110212958}
   - {fileID: 110260313}
   - {fileID: 110247123}
+  - {fileID: 110229437}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
-      first: {fileID: 110247123}
-      second:
-      - {fileID: 110118340}
+      first: {fileID: 110229437}
+      second: []
     data:
       first: {fileID: 0}
       second: []
@@ -199,10 +280,17 @@ StateMachine:
       second:
       - {fileID: 110100000}
       - {fileID: 110131269}
+      - {fileID: 110111159}
     data:
       first: {fileID: 110260313}
       second:
       - {fileID: 110148146}
+      - {fileID: 110107700}
+    data:
+      first: {fileID: 110247123}
+      second:
+      - {fileID: 110118340}
+      - {fileID: 110179819}
   m_MotionSetCount: 1
-  m_AnyStatePosition: {x: 48, y: 24, z: 0}
+  m_AnyStatePosition: {x: 24, y: -48, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}

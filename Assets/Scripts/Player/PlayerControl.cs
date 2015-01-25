@@ -47,13 +47,21 @@ public class PlayerControl : MonoBehaviour
         m_playerLife--;
         if(m_playerLife <= 0)
         {
-            //Player death
             m_hud.UpdateLife(m_playerID, 0);
+            this.enabled = false;
+            rigidbody2D.velocity = new Vector2(0.0f, 0.0f);
+            GetComponentInChildren<Animator>().SetBool("dead", true);
+            Invoke("YouAreDead", 3.0f);
         }
         else
         {
             m_hud.UpdateLife(m_playerID, m_playerLife);
         }
+    }
+
+    private void YouAreDead()
+    {
+        Camera.main.GetComponent<FadeToWithScript>().enabled = true;
     }
 
     public void GainLife()

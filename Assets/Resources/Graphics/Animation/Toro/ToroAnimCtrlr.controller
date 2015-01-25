@@ -20,6 +20,12 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
+  - m_Name: dead
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 3
     m_Name: Base Layer
@@ -46,6 +52,26 @@ Transition:
   m_Conditions:
   - m_ConditionMode: 1
     m_ConditionEvent: moving
+    m_EventTreshold: 0
+    m_ExitTime: 1
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
+--- !u!1101 &110112832
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110230127}
+  m_DstState: {fileID: 110273931}
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: dead
     m_EventTreshold: 0
     m_ExitTime: 1
   m_Atomic: 1
@@ -92,6 +118,26 @@ Transition:
   m_Solo: 0
   m_Mute: 0
   m_CanTransitionToSelf: 0
+--- !u!1101 &110165477
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110269440}
+  m_DstState: {fileID: 110273931}
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: dead
+    m_EventTreshold: 0
+    m_ExitTime: 1
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
 --- !u!1101 &110176570
 Transition:
   serializedVersion: 2
@@ -112,6 +158,26 @@ Transition:
   m_Solo: 0
   m_Mute: 0
   m_CanTransitionToSelf: 0
+--- !u!1101 &110176789
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110200000}
+  m_DstState: {fileID: 110273931}
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: dead
+    m_EventTreshold: 0
+    m_ExitTime: 1
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
 --- !u!1102 &110200000
 State:
   m_ObjectHideFlags: 3
@@ -123,7 +189,7 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: 2b3804632f31c5346b141b86105920b3, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: -144, y: 72, z: 0}
+  m_Position: {x: -84, y: 204, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -138,7 +204,7 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: da2783aaee163fd4b8871975666dff50, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: -144, y: 156, z: 0}
+  m_Position: {x: -168, y: 96, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -153,7 +219,22 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: 8e19146d89239ea4b81f158c667a9e7c, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: 108, y: 120, z: 0}
+  m_Position: {x: 144, y: 156, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110273931
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ToroDeathAnim
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: e31b0be6ca75801499510c8eb1d1a4aa, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 120, y: -60, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -169,22 +250,29 @@ StateMachine:
   - {fileID: 110200000}
   - {fileID: 110230127}
   - {fileID: 110269440}
+  - {fileID: 110273931}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
-      first: {fileID: 110269440}
-      second:
-      - {fileID: 110134003}
+      first: {fileID: 110273931}
+      second: []
     data:
       first: {fileID: 110200000}
       second:
       - {fileID: 110100000}
       - {fileID: 110156879}
+      - {fileID: 110176789}
     data:
       first: {fileID: 110230127}
       second:
       - {fileID: 110176570}
+      - {fileID: 110112832}
+    data:
+      first: {fileID: 110269440}
+      second:
+      - {fileID: 110134003}
+      - {fileID: 110165477}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: -144, y: 24, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}

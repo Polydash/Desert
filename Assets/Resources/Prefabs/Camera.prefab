@@ -14,6 +14,9 @@ GameObject:
   - 81: {fileID: 8100000}
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400004}
+  - 131: {fileID: 13100000}
+  - 114: {fileID: 11400008}
+  - 114: {fileID: 11400006}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -482,6 +485,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 924ea6c37df54654890eed4cf5661ef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf7cdf3ea0806824b82b678376ef729b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 13100000}
+--- !u!114 &11400008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688f4d4bbbd3fe2499ffdb87f4285a32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 13100000}
 --- !u!124 &12400000
 Behaviour:
   m_ObjectHideFlags: 1
@@ -489,6 +516,25 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
+--- !u!131 &13100000
+GUITexture:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: ec42ff82b307d1b4e9259c236a64ec7d, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1920
+    height: 1080
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

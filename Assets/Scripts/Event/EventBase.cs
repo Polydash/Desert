@@ -94,6 +94,12 @@ public class EventBase : MonoBehaviour
         for(int i=0; i < m_data.m_choices.Length; i++)
         {
             int result = item.GetTag();
+
+            if(m_data.m_choices[i].m_tagList.Length == 0)
+            {
+                continue;
+            }
+
             for(int j=0; j < m_data.m_choices[i].m_tagList.Length; j++)
             {
                 result = result & ((int) m_data.m_choices[i].m_tagList[j]);

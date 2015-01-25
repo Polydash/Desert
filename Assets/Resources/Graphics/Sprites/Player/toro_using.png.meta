@@ -1,6 +1,11 @@
 fileFormatVersion: 2
 guid: 12bfb32a70fd0ed4888aca74da0fb707
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: toro_using_0
+    21300002: toro_using_1
+    21300004: toro_using_2
+    21300006: toro_using_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0

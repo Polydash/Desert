@@ -181,6 +181,7 @@ MonoBehaviour:
   m_choices:
   - text: Use Artefact
     m_tagList: 00010000
+    m_description: {fileID: 0}
 --- !u!95 &49091383
 Animator:
   serializedVersion: 3
@@ -441,6 +442,7 @@ MonoBehaviour:
   - text: "Casse la pierre et lib\xE8re le personnage prisonnier qui offre une gourde
       au joueur "
     m_tagList: 00100000
+    m_description: {fileID: 0}
 --- !u!114 &117450862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -538,34 +540,49 @@ MonoBehaviour:
   m_choices:
   - text: Steal the vendor
     m_tagList: 00200000
+    m_description: {fileID: 0}
   - text: Buy Item
     m_tagList: 40000000
+    m_description: {fileID: 0}
   - text: Buy Item
     m_tagList: 20000000
+    m_description: {fileID: 0}
   - text: Sell Item
     m_tagList: 01000000
+    m_description: {fileID: 0}
   - text: Sell Item
     m_tagList: 02000000
+    m_description: {fileID: 0}
   - text: Sell Item
     m_tagList: 04000000
+    m_description: {fileID: 0}
   - text: Sell Item
     m_tagList: 08000000
+    m_description: {fileID: 0}
   - text: Sell Item
     m_tagList: 10000000
+    m_description: {fileID: 0}
   - text: Sell Item
     m_tagList: 80000000
+    m_description: {fileID: 0}
   - text: Sell Item
     m_tagList: 00010000
+    m_description: {fileID: 0}
   - text: Sell Item
     m_tagList: 00020000
+    m_description: {fileID: 0}
   - text: Sell Item
     m_tagList: 00040000
+    m_description: {fileID: 0}
   - text: Sell Item
     m_tagList: 00080000
+    m_description: {fileID: 0}
   - text: Sell Item
     m_tagList: 00400000
+    m_description: {fileID: 0}
   - text: Sell Item
     m_tagList: 00800000
+    m_description: {fileID: 0}
 --- !u!95 &129062130
 Animator:
   serializedVersion: 3
@@ -695,18 +712,25 @@ MonoBehaviour:
   m_choices:
   - text: Give item
     m_tagList: 40000000
+    m_description: {fileID: 0}
   - text: Give item
     m_tagList: 00400000
+    m_description: {fileID: 0}
   - text: Give item
     m_tagList: 00800000
+    m_description: {fileID: 0}
   - text: Give item
     m_tagList: 10000000
+    m_description: {fileID: 0}
   - text: Give item
     m_tagList: 08000000
+    m_description: {fileID: 0}
   - text: Gain gold
     m_tagList: 00200000
+    m_description: {fileID: 0}
   - text: Gain gold
     m_tagList: 00080000
+    m_description: {fileID: 0}
 --- !u!212 &160388503
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -973,8 +997,10 @@ MonoBehaviour:
   m_choices:
   - text: Use Flask
     m_tagList: 00020000
+    m_description: {fileID: 0}
   - text: Drink Water
     m_tagList: 00200000
+    m_description: {fileID: 0}
 --- !u!212 &237262032
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1103,8 +1129,10 @@ MonoBehaviour:
   m_choices:
   - text: Take a horn
     m_tagList: 00200000
+    m_description: {fileID: 0}
   - text: Take meat
     m_tagList: 00080000
+    m_description: {fileID: 0}
 --- !u!95 &308166761
 Animator:
   serializedVersion: 3
@@ -1978,6 +2006,7 @@ MonoBehaviour:
   m_choices:
   - text: "R\xE9cup\xE8re une pioche et une machette"
     m_tagList: 00200000
+    m_description: {fileID: 0}
 --- !u!114 &482522338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2099,34 +2128,49 @@ MonoBehaviour:
   m_choices:
   - text: Give your gold
     m_tagList: 40000000
+    m_description: {fileID: 0}
   - text: Attack him
     m_tagList: 00080000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 20000000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 01000000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 02000000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 00200000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 08000000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 10000000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 80000000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 00010000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 00020000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 00040000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 00100000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 00400000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 00800000
+    m_description: {fileID: 0}
 --- !u!95 &485420992
 Animator:
   serializedVersion: 3
@@ -2316,7 +2360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97556b6d4b28af74db96b64dbec07d10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_speedX: 800
+  m_speedX: 80
   m_speedY: 60
   m_playerID: 2
 --- !u!61 &537986287
@@ -2622,8 +2666,10 @@ MonoBehaviour:
   m_choices:
   - text: Coupe les ronces et ouvre le chemin
     m_tagList: 00080000
+    m_description: {fileID: 0}
   - text: Coupe les ronces et se blesse
     m_tagList: 00200000
+    m_description: {fileID: 0}
 --- !u!114 &559719682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3016,6 +3062,7 @@ MonoBehaviour:
   m_choices:
   - text: 
     m_tagList: 00200000
+    m_description: {fileID: 0}
 --- !u!212 &592438513
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3296,34 +3343,49 @@ MonoBehaviour:
   m_choices:
   - text: Give your gold
     m_tagList: 40000000
+    m_description: {fileID: 0}
   - text: Attack him
     m_tagList: 00080000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 20000000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 01000000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 02000000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 00200000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 08000000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 10000000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 80000000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 00010000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 00020000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 00040000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 00100000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 00400000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 00800000
+    m_description: {fileID: 0}
 --- !u!95 &718359376
 Animator:
   serializedVersion: 3
@@ -3577,8 +3639,10 @@ MonoBehaviour:
   m_choices:
   - text: Cuire viande
     m_tagList: 00400000
+    m_description: {fileID: 0}
   - text: Gagner PV
     m_tagList: 00200000
+    m_description: {fileID: 0}
 --- !u!212 &799697638
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3711,6 +3775,7 @@ MonoBehaviour:
   m_choices:
   - text: Rest in peace
     m_tagList: 00200000
+    m_description: {fileID: 0}
 --- !u!212 &810286105
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3904,8 +3969,10 @@ MonoBehaviour:
   m_choices:
   - text: WIN THE GAME
     m_tagList: 00800000
+    m_description: {fileID: 0}
   - text: WIN THE GAME
     m_tagList: 10000000
+    m_description: {fileID: 0}
 --- !u!212 &918610839
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4176,6 +4243,7 @@ MonoBehaviour:
   m_choices:
   - text: 
     m_tagList: 00200000
+    m_description: {fileID: 0}
 --- !u!212 &1040936806
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4351,8 +4419,10 @@ MonoBehaviour:
   m_choices:
   - text: Use Flask
     m_tagList: 00020000
+    m_description: {fileID: 0}
   - text: Drink Water
     m_tagList: 00200000
+    m_description: {fileID: 0}
 --- !u!212 &1078960557
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4435,6 +4505,7 @@ MonoBehaviour:
   m_choices:
   - text: 
     m_tagList: 00200000
+    m_description: {fileID: 0}
 --- !u!212 &1096702302
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4561,8 +4632,10 @@ MonoBehaviour:
   m_choices:
   - text: "Combat \xE0 main nue"
     m_tagList: 00200000
+    m_description: {fileID: 0}
   - text: Combat
     m_tagList: 00080000
+    m_description: {fileID: 0}
 --- !u!212 &1125854337
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4689,6 +4762,7 @@ MonoBehaviour:
   m_choices:
   - text: 
     m_tagList: 00200000
+    m_description: {fileID: 0}
 --- !u!212 &1157437827
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4770,6 +4844,7 @@ MonoBehaviour:
   m_choices:
   - text: Planter baies
     m_tagList: 08000000
+    m_description: {fileID: 0}
 --- !u!212 &1162827697
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4954,34 +5029,49 @@ MonoBehaviour:
   m_choices:
   - text: Steal the vendor
     m_tagList: 00200000
+    m_description: {fileID: 0}
   - text: Buy Item
     m_tagList: 40000000
+    m_description: {fileID: 0}
   - text: Buy Item
     m_tagList: 20000000
+    m_description: {fileID: 0}
   - text: Sell Item
     m_tagList: 01000000
+    m_description: {fileID: 0}
   - text: Sell Item
     m_tagList: 02000000
+    m_description: {fileID: 0}
   - text: Sell Item
     m_tagList: 04000000
+    m_description: {fileID: 0}
   - text: Sell Item
     m_tagList: 08000000
+    m_description: {fileID: 0}
   - text: Sell Item
     m_tagList: 10000000
+    m_description: {fileID: 0}
   - text: Sell Item
     m_tagList: 80000000
+    m_description: {fileID: 0}
   - text: Sell Item
     m_tagList: 00010000
+    m_description: {fileID: 0}
   - text: Sell Item
     m_tagList: 00020000
+    m_description: {fileID: 0}
   - text: Sell Item
     m_tagList: 00040000
+    m_description: {fileID: 0}
   - text: Sell Item
     m_tagList: 00080000
+    m_description: {fileID: 0}
   - text: Sell Item
     m_tagList: 00400000
+    m_description: {fileID: 0}
   - text: Sell Item
     m_tagList: 00800000
+    m_description: {fileID: 0}
 --- !u!95 &1178319088
 Animator:
   serializedVersion: 3
@@ -5120,7 +5210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97556b6d4b28af74db96b64dbec07d10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_speedX: 800
+  m_speedX: 80
   m_speedY: 60
   m_playerID: 1
 --- !u!4 &1245001130
@@ -5546,6 +5636,7 @@ MonoBehaviour:
   m_choices:
   - text: 
     m_tagList: 00200000
+    m_description: {fileID: 0}
 --- !u!212 &1340067283
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5722,8 +5813,10 @@ MonoBehaviour:
   m_choices:
   - text: Take a horn
     m_tagList: 00200000
+    m_description: {fileID: 0}
   - text: Take meat
     m_tagList: 00080000
+    m_description: {fileID: 0}
 --- !u!95 &1348922749
 Animator:
   serializedVersion: 3
@@ -6038,10 +6131,13 @@ MonoBehaviour:
   m_choices:
   - text: Fuite du chien
     m_tagList: 00200000
+    m_description: {fileID: 0}
   - text: Tuer le chien
     m_tagList: 00080000
+    m_description: {fileID: 0}
   - text: Donner viande
     m_tagList: 00400000
+    m_description: {fileID: 0}
 --- !u!212 &1422960784
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6239,7 +6335,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 8859626b86371ba49ab0f621c52956ee, type: 2}
       propertyPath: m_speedX
-      value: 800
+      value: 80
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8859626b86371ba49ab0f621c52956ee, type: 2}
@@ -6377,8 +6473,10 @@ MonoBehaviour:
   m_choices:
   - text: Cuire viande
     m_tagList: 00400000
+    m_description: {fileID: 0}
   - text: Gagner PV
     m_tagList: 00200000
+    m_description: {fileID: 0}
 --- !u!212 &1504968182
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7017,8 +7115,10 @@ MonoBehaviour:
   m_choices:
   - text: Coupe les ronces et ouvre le chemin
     m_tagList: 00080000
+    m_description: {fileID: 0}
   - text: Coupe les ronces et se blesse
     m_tagList: 00200000
+    m_description: {fileID: 0}
 --- !u!212 &2009816376
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7100,8 +7200,10 @@ MonoBehaviour:
   m_choices:
   - text: Gagner viande
     m_tagList: 00080000
+    m_description: {fileID: 0}
   - text: Fuite du suricate
     m_tagList: 00200000
+    m_description: {fileID: 0}
 --- !u!212 &2010782775
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7276,6 +7378,7 @@ MonoBehaviour:
   m_choices:
   - text: Use Artefact
     m_tagList: 00010000
+    m_description: {fileID: 0}
 --- !u!95 &2075188127
 Animator:
   serializedVersion: 3
@@ -7356,7 +7459,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 975b8c4792360e647950e850cea840b4, type: 2}
       propertyPath: m_speedX
-      value: 800
+      value: 80
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 975b8c4792360e647950e850cea840b4, type: 2}
@@ -7423,32 +7526,46 @@ MonoBehaviour:
   m_choices:
   - text: Give your meat
     m_tagList: 00800000
+    m_description: {fileID: 0}
   - text: Give your meat
     m_tagList: 00400000
+    m_description: {fileID: 0}
   - text: Win
     m_tagList: 00080000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 01000000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 02000000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 00200000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 08000000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 10000000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 80000000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 00010000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 00020000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 00040000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 00100000
+    m_description: {fileID: 0}
   - text: Loose
     m_tagList: 02000000
+    m_description: {fileID: 0}
 --- !u!61 &2105833638
 BoxCollider2D:
   m_ObjectHideFlags: 0

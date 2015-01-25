@@ -9,6 +9,8 @@ public class EventBase : MonoBehaviour
     protected Item m_handItem;
     protected HUDControl m_hud;
 
+    private GameObject m_descriptionPrefab;
+
 	protected void Start()
 	{
         GameObject[] m_playersTemp = GameObject.FindGameObjectsWithTag("Player"); 
@@ -30,6 +32,8 @@ public class EventBase : MonoBehaviour
         transform.position = new Vector3(transform.position.x,
                                          transform.position.y,
                                          transform.position.y/maxPos.y);
+
+        m_descriptionPrefab = Resources.Load<GameObject>("Prefabs/Description");
     }
 
 	protected void Update()
@@ -56,6 +60,11 @@ public class EventBase : MonoBehaviour
                     if(choice >= 0)
                     {
                         DoChoice(m_players[i], m_inventories[i].GetItem(0), 0, choice);
+                        if(m_data.m_choices[choice].m_description)
+                        {
+                            GameObject description = GameObject.Instantiate(m_descriptionPrefab, transform.position, Quaternion.identity) as GameObject;
+                            description.GetComponent<SpriteRenderer>().sprite = m_data.m_choices[choice].m_description;
+                        }
                     }
 				}
 				else if(Input.GetButtonDown(playerName + "A"))
@@ -64,6 +73,11 @@ public class EventBase : MonoBehaviour
                     if(choice >= 0)
                     {
                         DoChoice(m_players[i], m_inventories[i].GetItem(1), 1, choice);
+                        if(m_data.m_choices[choice].m_description)
+                        {
+                            GameObject description = GameObject.Instantiate(m_descriptionPrefab, transform.position, Quaternion.identity) as GameObject;
+                            description.GetComponent<SpriteRenderer>().sprite = m_data.m_choices[choice].m_description;
+                        }
                     }
 				}
 				else if(Input.GetButtonDown(playerName + "B"))
@@ -72,6 +86,11 @@ public class EventBase : MonoBehaviour
                     if(choice >= 0)
                     {
                         DoChoice(m_players[i], m_inventories[i].GetItem(2), 2, choice);
+                        if(m_data.m_choices[choice].m_description)
+                        {
+                            GameObject description = GameObject.Instantiate(m_descriptionPrefab, transform.position, Quaternion.identity) as GameObject;
+                            description.GetComponent<SpriteRenderer>().sprite = m_data.m_choices[choice].m_description;
+                        }
                     }
 				}
 			}

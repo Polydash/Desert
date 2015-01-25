@@ -8,10 +8,11 @@ public class EventData : MonoBehaviour
 	{
 		public string text;
 		public Item.eItemTag[] m_tagList;
+        public Sprite m_description;
 	}
 
 	public Vector2 m_hitbox;
-	public Choice[] m_choices; 
+	public Choice[] m_choices;
 
 	private void OnDrawGizmosSelected()
 	{

@@ -6,7 +6,9 @@ public class RescueEvent : EventBase
 	protected override void DoChoice(GameObject player, Item item, int itemIndex, int choice)
     {
         Debug.Log(m_data.m_choices[choice].text);
-
+        AudioSource eventSoundPlayer = GameObject.Find("EventSoundPlayer").GetComponent<AudioSource>();
+        AudioClip obj_machette = Resources.Load<AudioClip>("Sound/Event/objet_machette");
+        eventSoundPlayer.clip = obj_machette;
         Item flask = Resources.Load<Item>("Prefabs/Items/Flask");
         if(!flask)
         {
@@ -16,6 +18,8 @@ public class RescueEvent : EventBase
         PlayerInventory inventory = player.GetComponent<PlayerInventory>();
         inventory.ConsumeItem(itemIndex);
         inventory.SetItem(itemIndex, flask);
+        eventSoundPlayer.volume = 0.2f;
+        eventSoundPlayer.Play();
 
         Destroy(gameObject);
     }

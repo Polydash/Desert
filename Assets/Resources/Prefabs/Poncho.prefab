@@ -59,7 +59,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .88924104, y: 0, z: 0}
+  m_LocalPosition: {x: -1.99000001, y: -1.51999998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400000}
@@ -221,7 +221,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -246,16 +245,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stepsSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  inSounds: []
-  outSounds: []
+  - {fileID: 8300000, guid: 871dddd6de32cea488c771a8577f2577, type: 3}
+  - {fileID: 8300000, guid: 7dcd1da4aedc3ae4aaa2899bb6616ae1, type: 3}
+  - {fileID: 8300000, guid: 88a95ed9a5a9efb408896ee4bf6ca21b, type: 3}
+  - {fileID: 8300000, guid: e8ef9b06b4ae741438eda1c827d4229a, type: 3}
+  - {fileID: 8300000, guid: a05f2de87ca21b943997e80a026c9fc4, type: 3}
+  - {fileID: 8300000, guid: 93a6b5dcd75c4354ebc97abfd9aeb7e1, type: 3}
+  - {fileID: 8300000, guid: ad4f53816bb33af46a485b137d792bbf, type: 3}
+  - {fileID: 8300000, guid: a56b8c9417b82de4a9be6fad729d8f09, type: 3}
+  inSounds:
+  - {fileID: 8300000, guid: 08b2c9b043d95f24e942c2c91e7ac16b, type: 3}
+  - {fileID: 8300000, guid: efe7655ec47268f448a3be11b0f54c1a, type: 3}
+  - {fileID: 8300000, guid: cc57f9ebdd27558488815e1bdb94a0ad, type: 3}
+  - {fileID: 8300000, guid: d525cd72547a9b349aabc4792eedda35, type: 3}
+  outSounds:
+  - {fileID: 8300000, guid: 9f872668d45d9634a9d1c10e7414a707, type: 3}
+  - {fileID: 8300000, guid: d45716e4502b1794c88e6a176cfea2a5, type: 3}
+  - {fileID: 8300000, guid: 34cbdbf15efb1714cb2eecf338d78477, type: 3}
+  - {fileID: 8300000, guid: f3bba7517f656b043aa594968bcbfce8, type: 3}
   rangeNextStep: .5
 --- !u!114 &11400004
 MonoBehaviour:

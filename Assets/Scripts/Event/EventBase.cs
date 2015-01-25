@@ -44,7 +44,7 @@ public class EventBase : MonoBehaviour
 		if(shown)
 		{
 			//TODO(Paul) : Highlight options
-			renderer.material.color = Color.red;
+			//renderer.material.color = Color.red;
 
 			for(int i=0; i<m_players.Length; i++)
 			{
@@ -78,7 +78,7 @@ public class EventBase : MonoBehaviour
 		else
 		{
 			//TODO(Paul) : Disable highlighting
-			renderer.material.color = Color.white;
+			//renderer.material.color = Color.white;
 		}
 	}
 

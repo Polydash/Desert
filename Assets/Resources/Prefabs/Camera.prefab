@@ -366,20 +366,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ambianceSounds:
-  - {fileID: 8300000, guid: e16badc1e1caf26439e208efda708708, type: 3}
-  - {fileID: 8300000, guid: 8d13944b2abb38045ab04ae5046b0e35, type: 3}
-  - {fileID: 8300000, guid: eade2005c1832714ebb484994013eaa7, type: 3}
-  - {fileID: 8300000, guid: 7749cafed49875247a8a079a07136678, type: 3}
-  - {fileID: 8300000, guid: c35bf8386fa15a14c8be3ea99e46d813, type: 3}
-  - {fileID: 8300000, guid: 433d51237727c3d4ab96c59540df3b27, type: 3}
-  - {fileID: 8300000, guid: 96647df20ca15d0449db63647af24418, type: 3}
-  - {fileID: 8300000, guid: 5f2240ecd48a30047975d0fbe212ae2c, type: 3}
-  - {fileID: 8300000, guid: 61dd6151407824a4f8db785a258531f6, type: 3}
-  - {fileID: 8300000, guid: 37b93d0207131384fbecac581dac0658, type: 3}
-  - {fileID: 8300000, guid: 9e3c56ce43cd6804e8d6b1eb68c37109, type: 3}
-  - {fileID: 8300000, guid: 1e8d22459b42aa045b1fbea3c1621583, type: 3}
-  - {fileID: 8300000, guid: 4a893288465740f40bda88405d727137, type: 3}
-  rangeNextSound: 45
+  - {fileID: 8300000, guid: 2944047cbf95db54e9113a1dec087a12, type: 3}
+  - {fileID: 8300000, guid: 3b7bdd837878f864498b66e506b83bd5, type: 3}
+  - {fileID: 8300000, guid: feba2a466839d6d4ea2165a5406916a9, type: 3}
+  - {fileID: 8300000, guid: 1f3174f389ecc404f972c852b3187293, type: 3}
+  - {fileID: 8300000, guid: 7d8404d3bb6960b4daa1d5adc7b4c4a3, type: 3}
+  - {fileID: 8300000, guid: 47d5460b3ec8e624cac75c270d7654f7, type: 3}
+  - {fileID: 8300000, guid: 91edf13dd27b70445b1f36161fa5a519, type: 3}
+  - {fileID: 8300000, guid: 7b6b5ae4fa4cf014dbb34e9dffbbbf8a, type: 3}
+  animalsSounds:
+  - {fileID: 8300000, guid: cc253d798af6fa7458b9bddb53c02919, type: 3}
+  - {fileID: 8300000, guid: a376af1711a815c4faf8434513004303, type: 3}
+  - {fileID: 8300000, guid: 3a846bda576d9ab479e1b2c6dfe14479, type: 3}
+  - {fileID: 8300000, guid: 87ec63d4602c01045986cdfd5a49ff0f, type: 3}
+  - {fileID: 8300000, guid: b218f0bc1053828458a831e5f252ab53, type: 3}
+  - {fileID: 8300000, guid: cb6b5aaaeaadcee4aa41db37440c86b1, type: 3}
+  rangeNextAniSounds: {x: 20, y: 40}
+  rangeNextAmbSound: 45
 --- !u!124 &12400000
 Behaviour:
   m_ObjectHideFlags: 1
@@ -428,7 +431,7 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 5e620353d3cebe4408af6b296ef7993c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000

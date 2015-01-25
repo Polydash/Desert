@@ -49,18 +49,18 @@ TextureImporter:
         y: 0
         width: 160
         height: 270
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .375, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: poncho_using_1
       rect:
         serializedVersion: 2
-        x: 160
+        x: 159
         y: 0
         width: 160
         height: 270
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .375, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: poncho_using_2
       rect:
@@ -69,8 +69,8 @@ TextureImporter:
         y: 0
         width: 160
         height: 270
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .375, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: poncho_using_3
       rect:
@@ -79,8 +79,8 @@ TextureImporter:
         y: 0
         width: 160
         height: 270
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .375, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

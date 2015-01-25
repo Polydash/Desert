@@ -22,6 +22,7 @@ public class AmbianceSoundScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         AmbianceSoundsUpdate();
+        AnimalsSoundsUpdate();
 	}
 
     private void AmbianceSoundsUpdate()
@@ -34,6 +35,8 @@ public class AmbianceSoundScript : MonoBehaviour {
                 {
                     audioPlayer.clip = ambianceSounds[Random.Range(0, ambianceSounds.Length)];
                     audioPlayer.pitch = Random.Range(1.0f, 2.0f);
+                    audioPlayer.pan = 0;
+                    audioPlayer.volume = 1;
                     audioPlayer.Play();
                     nextAmbSound = rangeNextAmbSound;
                     break;
@@ -55,7 +58,7 @@ public class AmbianceSoundScript : MonoBehaviour {
                 if (!audioPlayer.isPlaying)
                 {
                     audioPlayer.clip = animalsSounds[Random.Range(0, animalsSounds.Length)];
-                    audioPlayer.pan = Random.Range(-1f, 1f);
+                    audioPlayer.pan = Random.Range(-2.0f, 1.0f);
                     audioPlayer.volume = Random.Range(0.5f, 1.0f);
                     audioPlayer.Play();
                     nextAniSounds = Random.Range(rangeNextAniSounds.x, rangeNextAniSounds.y);

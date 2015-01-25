@@ -11,7 +11,7 @@ public class PlayerInventory : MonoBehaviour
 		m_items = new Item[m_itemNum];
 		for(int i=0; i<m_itemNum; i++)
 		{
-			m_items = null;
+			m_items[i] = null;
 		}
 	}
 

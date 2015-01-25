@@ -43,6 +43,18 @@ public class HUDControl : MonoBehaviour
 		{
 			for(int j=0; j<m_playerHUD.Length; j++)
 			{
+				Item item = m_inventories[i].GetItem(j);
+				SpriteRenderer pictoRenderer = m_playerHUD[i].hudPictograms[j].GetComponent<SpriteRenderer>();
+
+				if(item != null)
+				{ 
+					pictoRenderer.sprite = item.m_pictogram;
+					pictoRenderer.enabled = true;
+				}
+				else
+				{
+					pictoRenderer.enabled = false;
+				}
 			}
 		}
 	}

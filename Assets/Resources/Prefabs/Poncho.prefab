@@ -32,6 +32,7 @@ GameObject:
   - 82: {fileID: 8200000}
   - 114: {fileID: 11400002}
   - 82: {fileID: 8200002}
+  - 114: {fileID: 11400006}
   m_Layer: 0
   m_Name: Poncho
   m_TagString: Player
@@ -220,6 +221,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -244,14 +246,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stepsSounds:
-  - {fileID: 8300000, guid: 871dddd6de32cea488c771a8577f2577, type: 3}
-  - {fileID: 8300000, guid: 7dcd1da4aedc3ae4aaa2899bb6616ae1, type: 3}
-  - {fileID: 8300000, guid: 88a95ed9a5a9efb408896ee4bf6ca21b, type: 3}
-  - {fileID: 8300000, guid: e8ef9b06b4ae741438eda1c827d4229a, type: 3}
-  - {fileID: 8300000, guid: a05f2de87ca21b943997e80a026c9fc4, type: 3}
-  - {fileID: 8300000, guid: 93a6b5dcd75c4354ebc97abfd9aeb7e1, type: 3}
-  - {fileID: 8300000, guid: ad4f53816bb33af46a485b137d792bbf, type: 3}
-  - {fileID: 8300000, guid: a56b8c9417b82de4a9be6fad729d8f09, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   inSounds: []
   outSounds: []
   rangeNextStep: .5
@@ -268,6 +270,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_speedX: 80
   m_speedY: 60
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b886932378a6db4bb0355695b4c7632, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_itemNum: 2
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

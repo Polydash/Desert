@@ -7,7 +7,7 @@ public class RescueEvent : EventBase
     {
         Debug.Log(m_data.m_choices[choice].text);
         AudioSource eventSoundPlayer = GameObject.Find("EventSoundPlayer").GetComponent<AudioSource>();
-        AudioClip obj_machette = Resources.Load<AudioClip>("Sound/Event/objet_machette");
+        AudioClip obj_machette = Resources.Load<AudioClip>("Sound/Event/Objet_pioche");
         eventSoundPlayer.clip = obj_machette;
         Item flask = Resources.Load<Item>("Prefabs/Items/Flask");
         if(!flask)

@@ -13,6 +13,7 @@ GameObject:
   - 124: {fileID: 12400000}
   - 81: {fileID: 8100000}
   - 114: {fileID: 11400000}
+  - 114: {fileID: 11400004}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -470,6 +471,17 @@ MonoBehaviour:
   - {fileID: 8300000, guid: cb6b5aaaeaadcee4aa41db37440c86b1, type: 3}
   rangeNextAniSounds: {x: 20, y: 40}
   rangeNextAmbSound: 45
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 924ea6c37df54654890eed4cf5661ef1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!124 &12400000
 Behaviour:
   m_ObjectHideFlags: 1

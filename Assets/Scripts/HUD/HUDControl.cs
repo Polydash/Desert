@@ -7,6 +7,7 @@ public class HUDControl : MonoBehaviour
 	{
 		public Transform hudBackground;
 		public Transform[] hudPictograms;
+        public bool[] highlight;
 	}
 
     public Transform[] m_lifeHUD;
@@ -26,9 +27,11 @@ public class HUDControl : MonoBehaviour
 			m_inventories[i] = players[i].GetComponent<PlayerInventory>();
 			m_playerHUD[i].hudBackground = transform.GetChild(i);
 			m_playerHUD[i].hudPictograms = new Transform[m_inventories[i].m_itemNum];
+			m_playerHUD[i].highlight = new bool[m_inventories[i].m_itemNum];
             for(int j=0; j < m_inventories[i].m_itemNum; j++)
 			{
 				m_playerHUD[i].hudPictograms[j] = m_playerHUD[i].hudBackground.GetChild(j);
+                m_playerHUD[i].highlight[j] = false;
 			}
             m_lifeHUD[i] = m_playerHUD[i].hudBackground.GetChild(m_inventories[i].m_itemNum);
 		}
@@ -65,5 +68,40 @@ public class HUDControl : MonoBehaviour
     public void UpdateLife(int lifePoints)
     {
         //Set life sprite
+    }
+
+    public void Highlight(int player, int item)
+    {
+        m_playerHUD[player].highlight[item] = true;
+    }
+
+    public void RefreshHighlight()
+    { 
+        for(int i=0; i<m_playerHUD.Length; i++)
+	    {
+            for(int j=0; j<m_inventories[i].m_itemNum; j++)
+			{
+                SpriteRenderer spriteRenderer = m_playerHUD[i].hudPictograms[j].GetComponent<SpriteRenderer>();
+                if(spriteRenderer.material.color == Color.gray && m_playerHUD[i].highlight[j])
+                {
+                    spriteRenderer.material.color = Color.white;
+                }
+                else if(spriteRenderer.material.color == Color.white && !m_playerHUD[i].highlight[j])
+                {
+                    spriteRenderer.material.color = Color.gray;
+                }
+            }
+        }
+    }
+
+    public void ResetHighlightState()
+    {
+        for(int i=0; i<m_playerHUD.Length; i++)
+	    {
+            for(int j=0; j<m_inventories[i].m_itemNum; j++)
+			{
+                m_playerHUD[i].highlight[j] = false;
+            }
+        }
     }
 }

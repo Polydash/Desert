@@ -7,19 +7,25 @@ public class EventBase : MonoBehaviour
     protected PlayerInventory[] m_inventories;
 	protected EventData m_data;
     protected Item m_handItem;
+    protected HUDControl m_hud;
 
 	protected void Start()
 	{
-		m_players = GameObject.FindGameObjectsWithTag("Player");
+        GameObject[] m_playersTemp = GameObject.FindGameObjectsWithTag("Player"); 
 		m_data = GetComponent<EventData>();
 
-        m_inventories = new PlayerInventory[m_players.Length];
+        m_inventories = new PlayerInventory[m_playersTemp.Length];
+        m_players = new GameObject[m_playersTemp.Length];
         for(int i=0; i < m_inventories.Length; i++)
         {
-            m_inventories[i] = m_players[i].GetComponent<PlayerInventory>();
+            int id = m_playersTemp[i].GetComponent<PlayerControl>().m_playerID-1;
+            m_players[id] = m_playersTemp[i];
+            m_inventories[id] = m_playersTemp[i].GetComponent<PlayerInventory>();
         }
 
 		Vector3 maxPos = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height));
+
+        m_hud = GameObject.FindGameObjectWithTag("HUD").GetComponent<HUDControl>();
 
         transform.position = new Vector3(transform.position.x,
                                          transform.position.y,
@@ -30,25 +36,25 @@ public class EventBase : MonoBehaviour
 	{
 		bool shown = false;
 
-		for(int i=0; i<m_players.Length; i++)
+		for(int index=0; index<m_players.Length; index++)
 		{
+            int i = m_players[index].GetComponent<PlayerControl>().m_playerID-1;
+
 			float posX = m_players[i].transform.position.x;
 			float posY = m_players[i].transform.position.y;
 			if(posX > transform.position.x - m_data.m_hitbox.x/2.0f && posX < transform.position.x + m_data.m_hitbox.x/2.0f &&
 			   posY > transform.position.y - m_data.m_hitbox.y/2.0f && posY < transform.position.y + m_data.m_hitbox.y/2.0f)
 			{
 				shown = true;
-			}
-		}
+                for(int j=0; j<m_inventories[i].m_itemNum; j++)
+                {
+                    if(itemMatching(m_inventories[i].GetItem(j)) >= 0)
+                    {
+                        m_hud.Highlight(i, j);
+                    }
+                }
 
-		if(shown)
-		{
-			//TODO(Paul) : Highlight options
-			//renderer.material.color = Color.red;
-
-			for(int i=0; i<m_players.Length; i++)
-			{
-				string playerName = "P" + (i+1).ToString() + " ";
+                string playerName = "P" + (i+1).ToString() + " ";
 				if(Input.GetButtonDown(playerName + "X"))
 				{
                     int choice = itemMatching(m_inventories[i].GetItem(0));
@@ -74,11 +80,6 @@ public class EventBase : MonoBehaviour
                     }
 				}
 			}
-		}
-		else
-		{
-			//TODO(Paul) : Disable highlighting
-			//renderer.material.color = Color.white;
 		}
 	}
 

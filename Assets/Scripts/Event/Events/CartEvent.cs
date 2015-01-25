@@ -22,6 +22,6 @@ public class CartEvent : EventBase
 
         renderer.material.color = Color.gray;
 
-        Camera.main.GetComponent<ScrollingScript>();
+        Camera.main.GetComponent<ScrollingScript>().CanScroll = true;
     }
 }

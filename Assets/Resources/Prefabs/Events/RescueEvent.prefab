@@ -9,8 +9,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
-  - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
+  - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: RescueEvent
   m_TagString: Untagged
@@ -38,7 +38,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48cc67e439994f74dad702dc1b2f5593, type: 3}
+  m_Script: {fileID: 11500000, guid: eb233b75037782143862ab02fbd064db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &11400002
@@ -56,7 +56,7 @@ MonoBehaviour:
   m_choices:
   - text: "Casse la pierre et lib\xE8re le personnage prisonnier qui offre une gourde
       au joueur "
-    m_tagList: 00040000
+    m_tagList: 00100000
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

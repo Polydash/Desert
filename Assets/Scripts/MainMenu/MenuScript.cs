@@ -63,7 +63,7 @@ public class MenuScript : MonoBehaviour {
             }
             if (selectedButton == 0)
             {
-                Application.LoadLevel("Prototype");
+                Application.LoadLevel("Controls");
             }
         }
         

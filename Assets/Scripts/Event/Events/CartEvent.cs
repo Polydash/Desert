@@ -32,9 +32,8 @@ public class CartEvent : EventBase
         Invoke("playPickAxeSound", 0.6f);
 
         renderer.material.color = Color.gray;
-
+        this.enabled = false;
         Camera.main.GetComponent<ScrollingScript>().CanScroll = true;
-        //Destroy(gameObject);
     }
 
     private void playPickAxeSound()

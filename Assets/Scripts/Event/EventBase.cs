@@ -116,7 +116,7 @@ public class EventBase : MonoBehaviour
 
         for(int i=0; i < m_data.m_choices.Length; i++)
         {
-            if(m_data.m_choices[i].m_tagList.Length == 0)
+            if(m_data.m_choices[i].m_tagList.Length == 0 && item.GetTag() != (int) Item.eItemTag.HAND)
             {
                 return i;
             }

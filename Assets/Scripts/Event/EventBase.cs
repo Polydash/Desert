@@ -34,8 +34,6 @@ public class EventBase : MonoBehaviour
 
 	protected void Update()
 	{
-		bool shown = false;
-
 		for(int index=0; index<m_players.Length; index++)
 		{
             int i = m_players[index].GetComponent<PlayerControl>().m_playerID-1;
@@ -45,7 +43,6 @@ public class EventBase : MonoBehaviour
 			if(posX > transform.position.x - m_data.m_hitbox.x/2.0f && posX < transform.position.x + m_data.m_hitbox.x/2.0f &&
 			   posY > transform.position.y - m_data.m_hitbox.y/2.0f && posY < transform.position.y + m_data.m_hitbox.y/2.0f)
 			{
-				shown = true;
                 for(int j=0; j<m_inventories[i].m_itemNum; j++)
                 {
                     if(itemMatching(m_inventories[i].GetItem(j)) >= 0)

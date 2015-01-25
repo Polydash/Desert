@@ -96,13 +96,13 @@ public class HUDControl : MonoBehaviour
             for(int j=0; j<m_inventories[i].m_itemNum; j++)
 			{
                 SpriteRenderer spriteRenderer = m_playerHUD[i].hudPictograms[j].GetComponent<SpriteRenderer>();
-                if(spriteRenderer.material.color == Color.gray && m_playerHUD[i].highlight[j])
+                if(spriteRenderer.material.color == Color.white && m_playerHUD[i].highlight[j])
+                {
+                    spriteRenderer.material.color = Color.red;
+                }
+                else if(spriteRenderer.material.color == Color.red && !m_playerHUD[i].highlight[j])
                 {
                     spriteRenderer.material.color = Color.white;
-                }
-                else if(spriteRenderer.material.color == Color.white && !m_playerHUD[i].highlight[j])
-                {
-                    spriteRenderer.material.color = Color.gray;
                 }
             }
         }

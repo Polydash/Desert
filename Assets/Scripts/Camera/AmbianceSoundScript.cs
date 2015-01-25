@@ -8,7 +8,7 @@ public class AmbianceSoundScript : MonoBehaviour {
 
     public Vector2 rangeNextAniSounds = new Vector2(30.0f, 60.0f);
     public float rangeNextAmbSound = 45.0f;
-    public float nextAniSounds;
+    private float nextAniSounds;
     private float nextAmbSound;
 
     private AudioSource[] audioPlayers;

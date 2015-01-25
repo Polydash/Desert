@@ -18,6 +18,12 @@ public class EventBase : MonoBehaviour
         {
             m_inventories[i] = m_players[i].GetComponent<PlayerInventory>();
         }
+
+		Vector3 maxPos = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height));
+
+        transform.position = new Vector3(transform.position.x,
+                                         transform.position.y,
+                                         transform.position.y/maxPos.y);
     }
 
 	protected void Update()

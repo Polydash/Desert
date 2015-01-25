@@ -16,6 +16,8 @@ public class KidAttackedEvent : EventBase
 
             case 1 :
                 player.GetComponent<PlayerInventory>().ConsumeItem(itemIndex);
+                GameObject fxHit = Resources.Load<GameObject>("Prefabs/FXs/HitFX");
+                GameObject.Instantiate(fxHit, transform.position + new Vector3(0.0f, 0.3f), Quaternion.identity);
                 renderer.material.color = Color.grey;
                 transform.GetChild(0).renderer.enabled = false;
                 this.enabled = false;

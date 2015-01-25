@@ -19,6 +19,9 @@ public class SuricateEvent : EventBase
                 GameObject ie = GameObject.Instantiate(itemEvent, new Vector3(transform.position.x, transform.position.y - (renderer.bounds.size.y / 2), transform.position.z), new Quaternion()) as GameObject;
                 (ie.renderer as SpriteRenderer).sprite = (it.renderer as SpriteRenderer).sprite;
                 ie.GetComponent<ItemEvent>().m_item = it;
+                GameObject fxHit = Resources.Load<GameObject>("Prefabs/FXs/HitFX");
+                GameObject.Instantiate(fxHit, transform.position + new Vector3(0.0f, 0.3f), Quaternion.identity);   
+
                 break;
         }
 

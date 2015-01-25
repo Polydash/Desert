@@ -10,6 +10,8 @@ public class IguaneEvent : EventBase
         if (choice == 0 || choice == 1 || choice == 2)
         {
             player.GetComponent<PlayerInventory>().ConsumeItem(itemIndex);
+            GameObject fxHit = Resources.Load<GameObject>("Prefabs/FXs/HitFX");
+            GameObject.Instantiate(fxHit, transform.position + new Vector3(0.0f, 0.3f), Quaternion.identity);
 
         }
         if (choice > 2)

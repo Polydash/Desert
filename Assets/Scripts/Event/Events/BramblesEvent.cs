@@ -14,6 +14,8 @@ public class BramblesEvent : EventBase
                 player.GetComponent<PlayerInventory>().ConsumeItem(itemIndex);
                 eventSoundPlayer.volume = 0.2f;
                 eventSoundPlayer.Play();
+                GameObject fxHit = Resources.Load<GameObject>("Prefabs/FXs/HitFX");
+                GameObject.Instantiate(fxHit, transform.position + new Vector3(0.0f, 0.3f), Quaternion.identity);
                 Destroy(gameObject);
                 break;
 

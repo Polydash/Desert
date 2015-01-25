@@ -1816,6 +1816,9 @@ GameObject:
   - 81: {fileID: 437239307}
   - 114: {fileID: 437239312}
   - 114: {fileID: 437239313}
+  - 131: {fileID: 437239316}
+  - 114: {fileID: 437239315}
+  - 114: {fileID: 437239314}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -1895,7 +1898,7 @@ Transform:
   - {fileID: 563230879}
   - {fileID: 316343399}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!114 &437239312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1921,6 +1924,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 924ea6c37df54654890eed4cf5661ef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &437239314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400006, guid: a05f88f526243f649871790402cf0c72,
+    type: 2}
+  m_PrefabInternal: {fileID: 834831093}
+  m_GameObject: {fileID: 437239306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf7cdf3ea0806824b82b678376ef729b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 437239316}
+--- !u!114 &437239315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400008, guid: a05f88f526243f649871790402cf0c72,
+    type: 2}
+  m_PrefabInternal: {fileID: 834831093}
+  m_GameObject: {fileID: 437239306}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688f4d4bbbd3fe2499ffdb87f4285a32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 437239316}
+--- !u!131 &437239316
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13100000, guid: a05f88f526243f649871790402cf0c72,
+    type: 2}
+  m_PrefabInternal: {fileID: 834831093}
+  m_GameObject: {fileID: 437239306}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: ec42ff82b307d1b4e9259c236a64ec7d, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1920
+    height: 1080
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
 --- !u!1 &473285096
 GameObject:
   m_ObjectHideFlags: 0
@@ -3167,7 +3216,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 59b04c579325bd14db252fa0fe15688e, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 59b04c579325bd14db252fa0fe15688e, type: 2}
@@ -3836,7 +3885,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a05f88f526243f649871790402cf0c72, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a05f88f526243f649871790402cf0c72, type: 2}
@@ -5225,7 +5274,7 @@ Transform:
   m_Children:
   - {fileID: 68109077}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!61 &1245001131
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5511,7 +5560,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a8e78aa4f167d9a4bacd9962c64618fb, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: a8e78aa4f167d9a4bacd9962c64618fb, type: 2}
       propertyPath: m_RootOrder
@@ -6331,7 +6380,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8859626b86371ba49ab0f621c52956ee, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 8859626b86371ba49ab0f621c52956ee, type: 2}
       propertyPath: m_speedX
@@ -7455,7 +7504,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 975b8c4792360e647950e850cea840b4, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 975b8c4792360e647950e850cea840b4, type: 2}
       propertyPath: m_speedX

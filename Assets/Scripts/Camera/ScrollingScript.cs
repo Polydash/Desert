@@ -17,6 +17,15 @@ public class ScrollingScript : MonoBehaviour {
         CanScroll = false;
         players = GameObject.FindGameObjectsWithTag("Player");
         screenWidth = Screen.width;
+        if (direction != 0)
+        {
+            GroundLoopScript groundScript = GameObject.Find("Grounds").GetComponent<GroundLoopScript>();
+            if (groundScript != null)
+            {
+                groundScript.direction = direction;
+                groundScript.enabled = true;
+            }
+        }
 	}
 
     void LateUpdate()

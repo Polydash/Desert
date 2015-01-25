@@ -11,6 +11,7 @@ public class FadeToWithScript : MonoBehaviour
     {
         texture.color = new Color(texture.color.r, texture.color.g, texture.color.b, opacity);
         texture.enabled = true;
+        Debug.Log(texture.transform.position);
     }
 
     void Update()

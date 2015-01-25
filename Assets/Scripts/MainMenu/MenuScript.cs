@@ -48,7 +48,7 @@ public class MenuScript : MonoBehaviour {
             }
         }
 
-        if (Input.GetButtonUp("P1 A"))
+        if (Input.GetButtonUp("P1 A") || Input.GetButtonUp("P1 X") || Input.GetButtonUp("P1 B"))
         {
             audioPlayer.clip = selection;
             audioPlayer.Play();

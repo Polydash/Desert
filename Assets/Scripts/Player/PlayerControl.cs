@@ -61,7 +61,7 @@ public class PlayerControl : MonoBehaviour
 
     private void YouAreDead()
     {
-        Camera.main.GetComponent<FadeToWithScript>().enabled = true;
+        Camera.main.GetComponentInChildren<FadeToWithScript>().enabled = true;
     }
 
     public void GainLife()

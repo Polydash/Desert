@@ -3,7 +3,7 @@ using System.Collections;
 
 public class FadeToWithScript : MonoBehaviour
 {
-    public GUITexture texture;
+    public SpriteRenderer texture;
 
     private float opacity = 0.0f;
 

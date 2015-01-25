@@ -13,7 +13,7 @@ public class TribeEvent : EventBase
                 
                 player.GetComponent<PlayerInventory>().ConsumeItem(itemIndex);
                 Debug.Log("You win the game.");
-                Camera.main.GetComponent<FadeToWithScript>().enabled = true;
+                Camera.main.GetComponentInChildren<FadeToWithScript>().enabled = true;
                 break;
         }
 

@@ -235,6 +235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_speedX: 80
   m_speedY: 60
+  m_playerID: 2
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -6,13 +6,12 @@ public class PlayerControl : MonoBehaviour
 	public float m_speedX;
 	public float m_speedY;
 
-	public int m_playerID{get; set;}
+	public int m_playerID;
 
 	private string m_name;
 
 	private void Start()
 	{
-		m_playerID = GameMgr.s_instance.GetNextPlayerID();
 		m_name = "P" + m_playerID.ToString();
 		gameObject.layer = LayerMask.NameToLayer(m_name);
 	}

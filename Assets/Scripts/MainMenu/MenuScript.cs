@@ -14,7 +14,7 @@ public class MenuScript : MonoBehaviour {
 	void Start () {
         audioPlayer = GetComponent<AudioSource>();
         changeSelection = Resources.Load<AudioClip>("Sound/Menu/Bouton_A_02");
-        selection = Resources.Load<AudioClip>("Sound/Menu/lol");
+        selection = Resources.Load<AudioClip>("Sound/Menu/Bouton_C_03");
         buttons = new List<ButtonScript>(GetComponentsInChildren<ButtonScript>());
         if (buttons.Count > 0)
         {
@@ -50,6 +50,8 @@ public class MenuScript : MonoBehaviour {
 
         if (Input.GetButtonUp("P1 A"))
         {
+            audioPlayer.clip = selection;
+            audioPlayer.Play();
             isItemSelected = true;
             if (selectedButton == 2)
             {

@@ -17,12 +17,10 @@ public class ItemEvent : EventBase
         {
             if(item)
             {
-                player.GetComponent<PlayerInventory>().ReplaceItem(itemIndex, m_item);
-            }
-            else
-            {
                 player.GetComponent<PlayerInventory>().SetItem(itemIndex, m_item);
             }
         }
+
+        Destroy(gameObject);
     }
 }

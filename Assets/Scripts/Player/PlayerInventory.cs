@@ -19,6 +19,10 @@ public class PlayerInventory : MonoBehaviour
 
 	public void SetItem(int i, Item it)
 	{
+        if(m_items[i])
+        {
+            //Spawn item
+        }
 		m_items[i] = it;
 	}
 
@@ -30,11 +34,5 @@ public class PlayerInventory : MonoBehaviour
 	public void ConsumeItem(int i)
 	{
 		m_items[i] = null;
-	}
-
-	public void ReplaceItem(int i, Item it)
-	{
-		//TODO(Paul) : Instantiate Event for previous Item
-		m_items[i] = it;
 	}
 }

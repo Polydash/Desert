@@ -20,7 +20,9 @@ public class Item : MonoBehaviour
 		TOOL = 		0x00000001 << 10,
 		BRAMBLES = 	0x00000001 << 11,
 		PRISONER = 	0x00000001 << 12,
-		HAND = 		0x00000001 << 13
+		HAND = 		0x00000001 << 13,
+        RAW_MEAT =  0x00000001 << 14,
+        MEAT = 0x00000001 << 15
 	}
 
 	public eItemTag[] m_tagList;

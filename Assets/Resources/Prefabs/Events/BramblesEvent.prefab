@@ -68,7 +68,7 @@ MonoBehaviour:
   m_choices:
   - text: Coupe les ronces et ouvre le chemin
     m_tagList: 00080000
-    m_description: {fileID: 21300000, guid: eb9ee590973098849bbbeba8dd44b288, type: 3}
+    m_description: {fileID: 21300000, guid: 63a9225d9d4e68f48bd5b11d1e97526b, type: 3}
   - text: Coupe les ronces et se blesse
     m_tagList: 00200000
     m_description: {fileID: 21300000, guid: ce4e5f4ec35afcb438db5d846e9b840b, type: 3}
